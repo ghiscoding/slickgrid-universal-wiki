@@ -1,0 +1,72 @@
+Welcome to the slickgrid-universal wiki!
+
+## TODO
+#### Code
+##### Legend: (E) must be extended in the external framework
+- [x] Aggregators (4)
+- [ ] Editors
+  - [ ] Autocomplete
+  - [ ] Checkbox
+  - [ ] Date
+  - [x] Float
+  - [x] Integer
+  - [x] Long Text
+  - [x] Multiple Select
+  - [x] Single Select
+  - [x] Slider
+  - [x] Text
+- [ ] Filters
+  - [ ] Autocomplete
+  - [ ] Compound Date
+  - [ ] Compound Input(s)
+  - [ ] Compound Slider
+  - [ ] Date Range
+  - [x] Input(s)
+  - [x] (E) Multiple Select 
+    - (E) each framework must implement the `collectionAsync` 
+  - [x] (E) Single Select 
+  - [x] Native Select 
+  - [x] Slider
+  - [x] Slider Range
+- [x] Formatters (31)
+- [ ] Extensions
+  - [x] AutoTooltip
+  - [x] Cell External Copy Manager
+  - [x] Cell Menu
+  - [x] Checkbox Selector
+  - [x] Context Menu
+  - [x] Draggable Grouping
+  - [x] Grid Menu
+  - [x] Header Button
+  - [x] Header Menu
+  - [ ] (E) Row Detail
+  - [x] Row Move
+  - [x] Row Selection
+- [x] Grouping Formatters (12)
+- [x] Sorters (5)
+- [ ] Services
+  - [x] Collection
+  - [ ] Excel Export (**separate package**)
+  - [ ] Export Text (**separate package?!**)
+  - [x] Extension
+  - [x] Filter
+  - [ ] GraphQL (**separate package**)
+  - [ ] OData (**separate package**)
+  - [ ] Grid Event
+  - [ ] Grid State
+  - [x] Grouping & Col Span
+  - [ ] Pagination
+  - [ ] Resizer
+  - [x] Shared
+  - [x] Sort
+
+#### Other Todos
+- [ ] Add Multiple Example Demos with Vanilla implementation
+  - [ ] Add GitHub Demo website
+  - [ ] Add Cypress E2E tests
+- [ ] Add CI/CD (CircleCI or GitHub Actions)
+  - [ ] Add Jest Unit tests
+  - [ ] Build and run on every PR
+  - [ ] Add Code Coverage (codecov)
+- [x] VScode Chrome Debugger
+- [x] Jest Debugger
