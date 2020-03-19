@@ -6,9 +6,9 @@ Welcome to the slickgrid-universal wiki!
 - [x] Aggregators (4)
 - [ ] Editors
   - [ ] Autocomplete
-  - [ ] Checkbox
+  - [x] Checkbox
   - [ ] Date
-  - [x] Float
+  - [ ] Float
   - [x] Integer
   - [x] Long Text
   - [x] Multiple Select
