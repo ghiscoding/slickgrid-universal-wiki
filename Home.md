@@ -70,3 +70,5 @@ Welcome to the slickgrid-universal wiki!
   - [ ] Add Code Coverage (codecov)
 - [x] VScode Chrome Debugger
 - [x] Jest Debugger
+- [ ] Remove any Deprecated code
+  - [ ] Create a Migration Guide 
