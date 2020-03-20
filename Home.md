@@ -8,7 +8,7 @@ Welcome to the slickgrid-universal wiki!
   - [ ] Autocomplete
   - [x] Checkbox
   - [ ] Date
-  - [ ] Float
+  - [x] Float
   - [x] Integer
   - [x] Long Text
   - [x] Multiple Select
