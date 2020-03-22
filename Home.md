@@ -61,14 +61,14 @@ Welcome to the slickgrid-universal wiki!
   - [x] Sort
 
 #### Other Todos
-- [ ] Add Multiple Example Demos with Vanilla implementation
-  - [ ] Add GitHub Demo website
-  - [ ] Add Cypress E2E tests
-- [ ] Add CI/CD (CircleCI or GitHub Actions)
-  - [ ] Add Jest Unit tests
-  - [ ] Build and run on every PR
-  - [ ] Add Code Coverage (codecov)
 - [x] VScode Chrome Debugger
 - [x] Jest Debugger
+- [ ] Add Multiple Example Demos with Vanilla implementation
+  - [ ] Add GitHub Demo website
+- [ ] Add CI/CD (CircleCI or GitHub Actions)
+  - [ ] Add Jest Unit tests
+  - [ ] Add Cypress E2E tests
+  - [ ] Add Code Coverage (codecov)
+  - [ ] Build and run on every PR
 - [ ] Remove any Deprecated code
   - [ ] Create a Migration Guide 
