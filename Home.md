@@ -5,7 +5,8 @@ Welcome to the slickgrid-universal wiki!
 ##### Legend: (E) must be extended in the external framework
 - [x] Aggregators (4)
 - [ ] Editors
-  - [ ] Autocomplete
+  - [x] Autocomplete
+    - (E) each framework must implement the `collectionAsync` 
   - [x] Checkbox
   - [ ] Date
   - [x] Float
@@ -16,7 +17,8 @@ Welcome to the slickgrid-universal wiki!
   - [x] Slider
   - [x] Text
 - [ ] Filters
-  - [ ] Autocomplete
+  - [x] Autocomplete
+    - (E) each framework must implement the `collectionAsync` 
   - [ ] Compound Date
   - [x] Compound Input(s)
   - [x] Compound Slider
