@@ -6,7 +6,6 @@ Welcome to the slickgrid-universal wiki!
 - [x] Aggregators (4)
 - [ ] Editors
   - [x] Autocomplete
-    - (E) each framework must implement the `collectionAsync` 
   - [x] Checkbox
   - [ ] Date
   - [x] Float
