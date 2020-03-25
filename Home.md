@@ -18,8 +18,8 @@ Welcome to the slickgrid-universal wiki!
 - [ ] Filters
   - [ ] Autocomplete
   - [ ] Compound Date
-  - [ ] Compound Input(s)
-  - [ ] Compound Slider
+  - [x] Compound Input(s)
+  - [x] Compound Slider
   - [ ] Date Range
   - [x] Input(s)
   - [x] (E) Multiple Select 
@@ -47,7 +47,7 @@ Welcome to the slickgrid-universal wiki!
 - [ ] Services
   - [x] Collection
   - [ ] Excel Export (**separate package**)
-  - [ ] Export Text (**separate package?!**)
+  - [ ] Export Text (**separate package**)
   - [x] Extension
   - [x] Filter
   - [ ] GraphQL (**separate package**)
