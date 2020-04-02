@@ -4,31 +4,10 @@ Welcome to the slickgrid-universal wiki!
 #### Code
 ##### Legend: (E) must be extended in the external framework
 - [x] Aggregators (4)
-- [ ] Editors
-  - [x] Autocomplete
-  - [x] Checkbox
-  - [ ] Date
-  - [x] Float
-  - [x] Integer
-  - [x] Long Text
-  - [x] Multiple Select
-  - [x] Single Select
-  - [x] Slider
-  - [x] Text
-- [ ] Filters
-  - [x] Autocomplete
+- [x] Editors (11)
+- [x] Filters (17)
+  - [x] Autocomplete & Single, Multiple Select
     - (E) each framework must implement the `collectionAsync` 
-  - [ ] Compound Date
-  - [x] Compound Input(s)
-  - [x] Compound Slider
-  - [ ] Date Range
-  - [x] Input(s)
-  - [x] (E) Multiple Select 
-    - (E) each framework must implement the `collectionAsync` 
-  - [x] (E) Single Select 
-  - [x] Native Select 
-  - [x] Slider
-  - [x] Slider Range
 - [x] Formatters (31)
 - [ ] Extensions
   - [x] AutoTooltip
@@ -64,12 +43,12 @@ Welcome to the slickgrid-universal wiki!
 #### Other Todos
 - [x] VScode Chrome Debugger
 - [x] Jest Debugger
-- [ ] Add Multiple Example Demos with Vanilla implementation
-  - [ ] Add GitHub Demo website
-- [ ] Add CI/CD (CircleCI or GitHub Actions)
-  - [ ] Add Jest Unit tests
+- [x] Add Multiple Example Demos with Vanilla implementation
+  - [x] Add GitHub Demo website
+- [x] Add CI/CD (CircleCI or GitHub Actions)
+  - [x] Add Jest Unit tests
   - [ ] Add Cypress E2E tests
-  - [ ] Add Code Coverage (codecov)
-  - [ ] Build and run on every PR
+  - [x] Add Code Coverage (codecov)
+  - [x] Build and run on every PR
 - [ ] Remove any Deprecated code
   - [ ] Create a Migration Guide 
