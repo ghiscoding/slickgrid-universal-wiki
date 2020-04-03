@@ -39,6 +39,14 @@ Welcome to the slickgrid-universal wiki!
   - [ ] Resizer
   - [x] Shared
   - [x] Sort
+- [ ] Others
+  - [ ] Custom Footer
+  - [ ] Dynamically Add Columns
+  - [ ] Grid Presets
+  - [ ] Pagination
+  - [ ] Tree View
+    - [ ] Search Filter on any Column
+    - [ ] Sorting from any Column
 
 #### Other Todos
 - [x] VScode Chrome Debugger
