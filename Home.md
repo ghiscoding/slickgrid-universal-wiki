@@ -6,7 +6,7 @@ Welcome to the slickgrid-universal wiki!
 - [x] Aggregators (4)
 - [x] Editors (11)
 - [x] Filters (17)
-  - [x] Autocomplete & Single, Multiple Select
+  - [x] Autocomplete, Single & Multiple Select
     - (E) each framework must implement the `collectionAsync` 
 - [x] Formatters (31)
 - [ ] Extensions
