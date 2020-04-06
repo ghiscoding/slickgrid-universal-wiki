@@ -32,7 +32,7 @@ Welcome to the slickgrid-universal wiki!
   - [x] Filter
   - [ ] GraphQL (**separate package**)
   - [ ] OData (**separate package**)
-  - [ ] Grid Event
+  - [x] Grid Event
   - [ ] Grid State
   - [x] Grouping & Col Span
   - [ ] Pagination
