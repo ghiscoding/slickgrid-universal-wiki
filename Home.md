@@ -36,7 +36,8 @@ Welcome to the slickgrid-universal wiki!
   - [ ] Grid State
   - [x] Grouping & Col Span
   - [ ] Pagination
-  - [ ] Resizer
+  - [ ] Resizer 
+    - moved the Service to an Extension
   - [x] Shared
   - [x] Sort
 - [ ] Others
@@ -58,5 +59,10 @@ Welcome to the slickgrid-universal wiki!
   - [ ] Add Cypress E2E tests
   - [x] Add Code Coverage (codecov)
   - [x] Build and run on every PR
+- [x] Bundle Creation (vanilla bundle)
+  - [ ] Eventually add Unit Tests as a PreBundle task
 - [ ] Remove any Deprecated code
   - [ ] Create a Migration Guide 
+- [ ] Add Typings for Grid & DataView objects
+- [ ] Add some bindings in the demo (e.g. pinned rows input)
+- [ ] Can we change how SlickGrid Events are called and use same signature as SlickGrid instead of CustomEvent EventData signature?
