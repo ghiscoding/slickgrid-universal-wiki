@@ -33,18 +33,18 @@ Welcome to the slickgrid-universal wiki!
   - [ ] GraphQL (**separate package**)
   - [ ] OData (**separate package**)
   - [x] Grid Event
-  - [ ] Grid State
+  - [x] Grid State
   - [x] Grouping & Col Span
-  - [ ] Pagination
+  - [x] Pagination
   - [ ] Resizer 
     - moved the Service to an Extension
   - [x] Shared
   - [x] Sort
 - [ ] Others
-  - [ ] Custom Footer
+  - [x] Custom Footer
   - [ ] Dynamically Add Columns
   - [ ] Grid Presets
-  - [ ] Pagination
+  - [ ] Local Pagination
   - [ ] Tree View
     - [ ] Search Filter on any Column
     - [ ] Sorting from any Column
