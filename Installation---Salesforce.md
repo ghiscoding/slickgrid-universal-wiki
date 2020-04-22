@@ -9,19 +9,14 @@ First download the grid bundle zip file from [here](https://github.com/ghiscodin
 
 ### Step 2. load Slickgrid
 Create all the Static Resources that are required by Slickgrid as shown below (they could be different names in your org).
+
+In the same file, load all external files with `renderedCallback` and get your data through a `@wire` method. Technically the `@wire` method will be processed before the `renderedCallback` and so you can assume that when calling the `initializeGrid` method we will already have the dataset ready.
 ```js
 // Static Resources (jQuery, jQueryUI, Slickgrid, and Icon Font)
 import jQuery_bundle from '@salesforce/resourceUrl/jQuery3';
 import jQueryUI_bundle from '@salesforce/resourceUrl/jQueryUI';
 import sf_slickgrid_bundle from '@salesforce/resourceUrl/Sf_SlickGrid'; // the zip described at step 1.1
 import materialicons_bundle from '@salesforce/resourceUrl/material_icons';
-```
-
-In the same file, load all external files with `renderedCallback` and get your data through a `@wire` method. Technically the `@wire` method will be processed before the `renderedCallback` and so you can assume that when calling the `initializeGrid` method we will already have the dataset ready.
-
-###### LWC JavaScript code
-```js
-// ...all imports...
 
 slickgridLwc;
 isLoaded = false;
