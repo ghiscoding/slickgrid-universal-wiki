@@ -35,7 +35,9 @@ async renderedCallback() {
     try {
         // load all CSS Styles
         await loadStyle(this, `${materialicons_bundle}/css/materialdesignicons.min.css`);
-        await loadStyle(this, `${sf_slickgrid_bundle}/styles/css/se-slickgrid-theme-material.css`);
+        await loadStyle(this, `${sf_slickgrid_bundle}/styles/css/slickgrid-theme-salesforce.css');
+        // or Google Material Theme
+        // await loadStyle(this, `${sf_slickgrid_bundle}/styles/css/se-slickgrid-theme-material.css`);
 
         // load all JS files
         await loadScript(this, `${jQuery_bundle}/jquery.min.js`);
