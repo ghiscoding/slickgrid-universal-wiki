@@ -26,8 +26,8 @@ Welcome to the slickgrid-universal wiki!
 - [x] Sorters (5)
 - [ ] Services
   - [x] Collection
-  - [ ] Excel Export (**separate package**)
-  - [ ] Export Text (**separate package**)
+  - [x] Excel Export (**separate package**)
+  - [x] Export Text (**separate package**)
   - [x] Extension
   - [x] Filter
   - [ ] GraphQL (**separate package**)
