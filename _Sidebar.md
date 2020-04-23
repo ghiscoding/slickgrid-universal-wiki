@@ -1,4 +1,4 @@
 * Migrations
-    * [Angular/Aurelia](/ghiscoding/slickgrid-universal/wiki/Migration-from-1.x-to-2.x)
+    * [Angular/Aurelia](/ghiscoding/slickgrid-universal/wiki/Migration-for-Angular-Aurelia-Slickgrid)
 * Installation
     * [Salesforce (LWC)](/ghiscoding/slickgrid-universal/wiki/Installation---Salesforce-(LWC))
