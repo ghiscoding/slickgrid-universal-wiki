@@ -1,2 +1,2 @@
 * Installation
-    * [Salesforce (LWC)](/ghiscoding/slickgrid-universal/wiki/HOWTO---Step-by-Step)
+    * [Salesforce (LWC)](/ghiscoding/slickgrid-universal/wiki/Installation---Salesforce-(LWC))
