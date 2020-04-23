@@ -12,6 +12,7 @@ Create all the Static Resources that are required by Slickgrid as shown below (t
 In the same file, load all external files with `renderedCallback` and get your data through a `@wire` method. Technically the `@wire` method will be processed before the `renderedCallback` and so you can assume that when calling the `initializeGrid` method we will already have the dataset ready.
 ```js
 import { LightningElement, api, track, wire } from 'lwc';
+import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
 import getQuoteLineItemsByQuoteId from '@salesforce/apex/SlickGridDataService.getQuoteLineItemsByQuoteId';
 
 // Static Resources (jQuery, jQueryUI, Slickgrid, and Icon Font)
