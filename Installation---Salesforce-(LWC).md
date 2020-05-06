@@ -54,10 +54,15 @@ async renderedCallback() {
 }
 
 initializeGrid() {
-    this.columnDefinitions = [ /* ... */ ];
+    this.columnDefinitions = [
+      { id: 'firstName', name: 'First Name', field: 'firstName' },
+      { id: 'lastName', name: 'Last Name', field: 'lastName' },
+      // ...
+   ];
+
     this.gridOptions = { 
       useSalesforceDefaultGridOptions: true,  // enable this flag to use regular grid options used for SF project
-      /** options */ 
+      /** other options... */ 
     };
 
     // find your HTML slickgrid container & pass it to the Slicker.GridBundle instantiation
