@@ -21,7 +21,6 @@ import getQuoteLineItemsByQuoteId from '@salesforce/apex/SlickGridDataService.ge
 import jQuery_bundle from '@salesforce/resourceUrl/jQuery3';
 import jQueryUI_bundle from '@salesforce/resourceUrl/jQueryUI';
 import sf_slickgrid_bundle from '@salesforce/resourceUrl/Sf_SlickGrid'; // the zip described at step 1.1
-import materialicons_bundle from '@salesforce/resourceUrl/material_icons';
 
 slickgridLwc;
 isLoaded = false;
@@ -36,7 +35,6 @@ wiredQuoteLines({ error, data }) {
 async renderedCallback() {
     try {
         // load all CSS Styles
-        await loadStyle(this, `${materialicons_bundle}/css/materialdesignicons.min.css`);
         await loadStyle(this, `${sf_slickgrid_bundle}/styles/css/slickgrid-theme-salesforce.css');
         // or Google Material Theme
         // await loadStyle(this, `${sf_slickgrid_bundle}/styles/css/se-slickgrid-theme-material.css`);
