@@ -22,6 +22,7 @@ import jQuery_bundle from '@salesforce/resourceUrl/jQuery3';
 import jQueryUI_bundle from '@salesforce/resourceUrl/jQueryUI';
 import sf_slickgrid_bundle from '@salesforce/resourceUrl/Sf_SlickGrid'; // the zip described at step 1.1
 
+slickgridInitialized = false;
 slickgridLwc;
 isLoaded = false;
 dataset = []; // load your data through an Apex Controller with @wire
@@ -33,6 +34,10 @@ wiredQuoteLines({ error, data }) {
 }
 
 async renderedCallback() {
+    if (this.slickgridInitialized) {
+        return;
+    }
+
     try {
         // load all CSS Styles
         await loadStyle(this, `${sf_slickgrid_bundle}/styles/css/slickgrid-theme-salesforce.css');
@@ -46,6 +51,7 @@ async renderedCallback() {
 
         // create the grid (column definitions, grid options & dataset)
         this.initializeGrid();
+        this.slickgridInitialized = true;
     } catch (error) {
         this.dispatchEvent(new ShowToastEvent({ title: 'Error loading SlickGrid', message: error && error.message || '', variant: 'error', }));
     }
