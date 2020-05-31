@@ -2,10 +2,13 @@ Some of the Deprecated Code and Feature Changes
 
 ### Deprecations
 
-### Changes
+## Changes
 - Grid Height/Width should now be passed through the Grid Options `this.gridOptions = { gridHeight: 500, gridWidth: 600 }`
 - `ExcelExportService` is now an opt-in package [@slickgrid-universal/excel-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/excel-export)
 - `ExportService` was renamed to `FileExportService` and is now an opt-in package [@slickgrid-universal/file-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/file-export)
+
+### Backend Service API
+Note that the `BackendServiceApi` is no longer exposed in the `{Angular|Aurelia}GridInstance`, so if you wish to reference it (for example when you want to use it with an external export button), then create a reference while instantiating it.
 
 ### Excel Export Service
 You need to use the new `@slickgrid-universal/excel-export` package and register the service in your grid options.
