@@ -25,7 +25,7 @@ export class MyExample {
   }
 }
 ```
-Also, note `ExcelExportService` is no longer exported in the `{framework}gridInstance`, so if you wish to reference it (for example when you want to use it with an external export button), then create a reference while instantiating it.
+Also, note that the `ExcelExportService` is no longer exposed in the `{Angular|Aurelia}GridInstance`, so if you wish to reference it (for example when you want to use it with an external export button), then create a reference while instantiating it.
 ```ts
 import { ExcelExportService } from '@slickgrid-universal/excel-export';
 
