@@ -27,9 +27,9 @@ export class MyExample {
   prepareGrid {
     this.gridOptions = {
       enableExcelExport: true,
-      excelExportOptions: {
-        sanitizeDataExport: true
-      },
+      enableExport: true,
+      excelExportOptions: { sanitizeDataExport: true },
+      exportOptions: { sanitizeDataExport: true },
       registerExternalServices: [new ExcelExportService(), new FileExportService()],
     }
   }
