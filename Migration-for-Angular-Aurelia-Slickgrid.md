@@ -12,6 +12,8 @@ Some of the Deprecated Code and Feature Changes
 - `columnDefinitions` is no longer a valid property of `BackendServiceOption` which means that you cannot use it anymore with OData/GraphQL. This is no longer necessary since the Services can get the columns definition right from the grid object.
 - `ExportService` renamed to `FileExportService` (export extensions are `.txt`, `.csv`)
   - however note that the options are still under the same property name `exportOptions`
+- Header Menu Commands (typo)
+  - rename `hideFilterCommands` to singular `hideFilterCommand` since there can only be 1 filter per column
 
 ### Backend Service API
 Note that the `BackendServiceApi` is no longer exposed in the `{Angular|Aurelia}GridInstance`, so if you wish to reference it (for example when you want to use it with an external export button), then create a reference while instantiating it.
