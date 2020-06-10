@@ -4,7 +4,8 @@ Some of the Deprecated Code and Feature Changes
 - removed `registerPlugins` Grid Option since all useful plugins/controls already exist in the lib.
 
 ## Changes
-- Grid Height/Width should now be passed through the Grid Options `this.gridOptions = { gridHeight: 500, gridWidth: 600 }`
+- Grid Height/Width should now be passed through the Grid Options 
+   - `this.gridOptions = { gridHeight: 500, gridWidth: 600 }`
 - `CheckboxSelector` interface renamed to `CheckboxSelectorOption`
 - `ExcelExportService` is now an opt-in package [@slickgrid-universal/excel-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/excel-export)
 - `ExportService` was renamed to `FileExportService` and is now an opt-in package [@slickgrid-universal/file-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/file-export)
