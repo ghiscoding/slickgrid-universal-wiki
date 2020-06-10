@@ -11,6 +11,7 @@ Some of the Deprecated Code and Feature Changes
 - `ExportService` was renamed to `FileExportService` and is now an opt-in package [@slickgrid-universal/file-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/file-export)
 - `columnDefinitions` is no longer a valid property of `BackendServiceOption` which means that you cannot use it anymore with OData/GraphQL. This is no longer necessary since the Services can get the columns definition right from the grid object.
 - `ExportService` renamed to `FileExportService` (it can export to file with extensions `.txt` and `.csv`)
+  - however note that the options are still under the same property name `exportOptions`
 
 ### Backend Service API
 Note that the `BackendServiceApi` is no longer exposed in the `{Angular|Aurelia}GridInstance`, so if you wish to reference it (for example when you want to use it with an external export button), then create a reference while instantiating it.
