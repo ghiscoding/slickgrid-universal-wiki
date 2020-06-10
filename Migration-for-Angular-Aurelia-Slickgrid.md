@@ -10,7 +10,7 @@ Some of the Deprecated Code and Feature Changes
 - `ExcelExportService` is now an opt-in package [@slickgrid-universal/excel-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/excel-export)
 - `ExportService` was renamed to `FileExportService` and is now an opt-in package [@slickgrid-universal/file-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/file-export)
 - `columnDefinitions` is no longer a valid property of `BackendServiceOption` which means that you cannot use it anymore with OData/GraphQL. This is no longer necessary since the Services can get the columns definition right from the grid object.
-- `ExportService` renamed to `FileExportService` (it can export to file with extensions `.txt` and `.csv`)
+- `ExportService` renamed to `FileExportService` (export extensions are `.txt`, `.csv`)
   - however note that the options are still under the same property name `exportOptions`
 
 ### Backend Service API
