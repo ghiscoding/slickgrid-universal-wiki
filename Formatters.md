@@ -207,19 +207,19 @@ Code example:
 ```ts
 const renderSparklineFormatter: Formatter = (row: number, cell: number, value: any, columnDef: Column, dataContext: any) => {
     var vals = [
-      dataContext["n1"],
-      dataContext["n2"],
-      dataContext["n3"],
-      dataContext["n4"],
-      dataContext["n5"]
+      dataContext['n1'],
+      dataContext['n2'],
+      dataContext['n3'],
+      dataContext['n4'],
+      dataContext['n5']
     ];
-    $(cellNode).empty().sparkline(vals, {width: "100%"});
+    $(cellNode).empty().sparkline(vals, { width: '100%' });
   }
 
  defineGrid() {
    this.columnDefinitions = [
       { id: 'title', name: 'Title', field: 'title' },
-      { id: "chart", name: "Chart", sortable: false, width: 60,
+      { id: 'chart', name: 'Chart', sortable: false, width: 60,
          formatter: waitingFormatter,
          rerenderOnResize: true,
          asyncPostRender: renderSparklineFormatter
