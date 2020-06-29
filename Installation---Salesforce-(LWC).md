@@ -73,8 +73,8 @@ initializeGrid() {
     };
 
     // find your HTML slickGrid container & pass it to the Slicker.GridBundle instantiation
-    const gridContainerElm = this.template.querySelector(`.myGrid`);
-    this.slickGridLwc = new Slicker.GridBundle(gridContainerElm, this.columnDefinitions, this.gridOptions, this.dataset);
+    const gridContainerElement = this.template.querySelector(`.myGrid`);
+    this.slickGridLwc = new Slicker.GridBundle(gridContainerElement, this.columnDefinitions, this.gridOptions, this.dataset);
 }
 ```
 
