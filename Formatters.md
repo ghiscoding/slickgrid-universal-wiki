@@ -47,6 +47,8 @@ For a [UI sample](/ghiscoding/slickgrid-universal/wiki/Formatters#ui-sample), sc
 
 #### Usage
 To use any of them, you need to import `Formatters` from `Slickgrid-Universal` and add a `formatter: ...` in your column definitions as shown below:
+
+##### TypeSript
 ```ts
 import { Formatters } from 'slickgrid-universal';
 
@@ -68,6 +70,38 @@ export class Example {
       { id: 'start', name: 'Start', field: 'start', formatter: Formatters.dateIso },
       { id: 'finish', name: 'Finish', field: 'finish', formatter: Formatters.dateIso },
       { id: 'effort-driven', name: 'Effort Driven', field: 'effortDriven', formatter: Formatters.checkmark }
+    ];
+  }
+}
+```
+
+##### SalesForce (ES6)
+For SalesForce the code is nearly the same, the only difference is to add the `Slicker` prefix, so instead of `Formatters.abc` we need to use `Slicker.Formatters.abc` 
+
+```ts
+// ... SF_Slickgrid import
+
+
+export class Example {
+  const Slicker = window.Slicker;
+
+  columnDefinitions: Column[];
+  gridOptions: GridOption;
+  dataset: any[];
+
+  constructor() {
+    // define the grid options & columns and then create the grid itself
+    this.defineGrid();
+  }
+
+  defineGrid() {
+    this.columnDefinitions = [
+      { id: 'title', name: 'Title', field: 'title' },
+      { id: 'duration', name: 'Duration (days)', field: 'duration' },
+      { id: '%', name: '% Complete', field: 'percentComplete', formatter: Slicker.Formatters.percentComplete },
+      { id: 'start', name: 'Start', field: 'start', formatter: Slicker.Formatters.dateIso },
+      { id: 'finish', name: 'Finish', field: 'finish', formatter: Slicker.Formatters.dateIso },
+      { id: 'effort-driven', name: 'Effort Driven', field: 'effortDriven', formatter: Slicker.Formatters.checkmark }
     ];
   }
 }
