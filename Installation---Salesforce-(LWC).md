@@ -78,7 +78,7 @@ initializeGrid() {
       useSalesforceDefaultGridOptions: true,  // enable this flag to use regular grid options used for SF project
 
       autoResize: {
-        container: '.grid-container',
+        container: '.user-grid',
         minHeight: 250,
         rightPadding: 50,
         bottomPadding: 75,
@@ -109,7 +109,7 @@ initializeGrid() {
     </div>
 
     <!-- slickGrid container-->
-    <div class="grid-container">
+    <div class="user-grid">
           <div class="grid-container"></div>
     </div>
 </template>
