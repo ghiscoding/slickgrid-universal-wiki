@@ -15,6 +15,7 @@ Notice below that in the `gridOptions`, there is a flag `useSalesforceDefaultGri
 ```js
 import { LightningElement, api, wire } from 'lwc';
 import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 // Static Resources (jQuery, jQueryUI, Slickgrid, and Icon Font)
 import jQuery_bundle from '@salesforce/resourceUrl/jQuery3';
