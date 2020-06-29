@@ -78,17 +78,15 @@ initializeGrid() {
 ###### Template
 ```html
 <template>
-    <lightning-card>
-        <!-- show a spinner -->
-        <div if:false={isLoaded} class="slds-is-relative">
-            <lightning-spinner alternative-text="Loading...">
-            </lightning-spinner>
-        </div>
+    <!-- show a spinner -->
+    <div if:false={isLoaded} class="slds-is-relative">
+          <lightning-spinner alternative-text="Loading...">
+          </lightning-spinner>
+    </div>
 
-        <!-- slickgrid container-->
-        <div class="grid-container">
-            <div class="myGrid"></div>
-        </div>
-    </lightning-card>
+    <!-- slickgrid container-->
+    <div class="grid-container">
+          <div class="myGrid"></div>
+    </div>
 </template>
 ```
