@@ -45,10 +45,10 @@ For a [UI sample](/ghiscoding/slickgrid-universal/wiki/Formatters#ui-sample), sc
 
 **Note:** The list might not always be up to date, you can refer to the [Formatters export](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/formatters/index.ts#L37) to know exactly which ones are available.
 
-#### Usage
+### Usage
 To use any of them, you need to import `Formatters` from `Slickgrid-Universal` and add a `formatter: ...` in your column definitions as shown below:
 
-##### TypeSript
+#### TypeSript
 ```ts
 import { Formatters } from 'slickgrid-universal';
 
@@ -75,7 +75,7 @@ export class Example {
 }
 ```
 
-##### SalesForce (ES6)
+#### SalesForce (ES6)
 For SalesForce the code is nearly the same, the only difference is to add the `Slicker` prefix, so instead of `Formatters.abc` we need to use `Slicker.Formatters.abc` 
 
 ```ts
