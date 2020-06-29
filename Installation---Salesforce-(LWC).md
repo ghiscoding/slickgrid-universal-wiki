@@ -32,7 +32,13 @@ dataset = []; // load your data through an Apex Controller with @wire
 
 @wire(getSomeData, { recordId: '$recordId' })
 wiredGetSomeData({ error, data }) {
-    if (data) { this.dataset = data; } else if (error) {}
+    if (data) {
+        this.dataset = data || [];
+        
+        if (this.slickgridLwc && Array.isArray(this.dataset)) {
+            this.makeGridEditable(this.isGridEditable);
+        }
+    } else if (error) {}
     this.isLoaded = true; // stop the spinner
 }
 
