@@ -15,12 +15,13 @@ Notice below that in the `gridOptions`, there is a flag `useSalesforceDefaultGri
 ```js
 import { LightningElement, api, track, wire } from 'lwc';
 import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
-import getSomeData from '@salesforce/apex/SomeService.getSomeData';
 
 // Static Resources (jQuery, jQueryUI, Slickgrid, and Icon Font)
 import jQuery_bundle from '@salesforce/resourceUrl/jQuery3';
 import jQueryUI_bundle from '@salesforce/resourceUrl/jQueryUI';
 import sf_slickGrid_bundle from '@salesforce/resourceUrl/Sf_SlickGrid'; // the zip described at step 1.1
+
+import getSomeData from '@salesforce/apex/SomeService.getSomeData';
 
 slickGridInitialized = false;
 slickGridLwc;
