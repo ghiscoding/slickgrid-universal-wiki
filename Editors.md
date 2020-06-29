@@ -51,6 +51,31 @@ this.columnDefinitions = [
 ];
 ```
 
+#### SalesForce (ES6)
+For SalesForce the code is nearly the same, the only difference is to add the `Slicker` prefix, so instead of `Editors.abc` we need to use `Slicker.Editors.abc`, `Slicker.FieldType.abc`, ...
+
+```ts
+this.columnDefinitions = [
+  { id: 'title', name: 'Title', field: 'title', type: Slicker.FieldType.string, editor: { model: Slicker.Editors.longText } },
+  { id: 'duration', name: 'Duration (days)', field: 'duration', type: Slicker.FieldType.number, editor: { model: Slicker.Editors.text } },
+  { id: 'complete', name: '% Complete', field: 'percentComplete', type: Slicker.FieldType.number, editor: { model: Slicker.Editors.integer } },
+  { id: 'start', name: 'Start', field: 'start', type: Slicker.FieldType.date, editor: { model: Slicker.Editors.date } },
+  { 
+    id: 'finish', name: 'Finish', field: 'finish', type: Slicker.FieldType.date, 
+    editor: { 
+      model: Slicker.Editors.date,
+      
+      // you can also add an optional placeholder
+      placeholder: 'choose a date'
+    }
+  },
+  { 
+    id: 'effort-driven', name: 'Effort Driven', field: 'effortDriven', formatter: Slicker.Formatters.checkmark, 
+    type: Slicker.FieldType.number, editor: { model: Slicker.Editors.checkbox } 
+  }
+];
+```
+
 #### Editor Output Type
 You could also define an `outputType` to an inline editor. The only built-in Editor with this functionality for now is the `dateEditor`. For example, on a date field, we can call this `outputType: FieldType.dateIso` (by default it uses `dateUtc` as the output):
 ```javascript
