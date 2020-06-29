@@ -3,6 +3,7 @@
 * Installation
     * [Salesforce (LWC)](/ghiscoding/slickgrid-universal/wiki/Installation---Salesforce-(LWC))
 * Interfaces/Models
+    * [Column Options](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/interfaces/column.interface.ts)
     * [Grid Options](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/interfaces/gridOption.interface.ts)
 * Column Functionalities
     * [Editors](/ghiscoding/slickgrid-universal/wiki/Editors)
