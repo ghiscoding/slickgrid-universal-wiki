@@ -5,3 +5,5 @@
 * Column Functionalities
     * [Editors](/ghiscoding/slickgrid-universal/wiki/Editors)
     * [Formatters](/ghiscoding/slickgrid-universal/wiki/Formatters)
+* Grid Functionalities
+    * [On Events](/ghiscoding/slickgrid-universal/wiki/Grid-&-DataView-Events)
