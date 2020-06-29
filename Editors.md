@@ -456,7 +456,7 @@ For SalesForce it's nearly the same, the only difference is that we add our even
 
 #### View (SF)
 ```html
-<div class="grid-container slds-p-horizontal" style="padding: 10px">
+<div class="grid-container slds-p-horizontal">
     <div class="grid1" onslickergridcreated={handleOnSlickerGridCreated}>
     </div>
 </div>
