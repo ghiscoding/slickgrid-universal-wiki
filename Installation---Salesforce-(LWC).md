@@ -20,10 +20,10 @@ import getSomeData from '@salesforce/apex/SomeService.getSomeData';
 // Static Resources (jQuery, jQueryUI, Slickgrid, and Icon Font)
 import jQuery_bundle from '@salesforce/resourceUrl/jQuery3';
 import jQueryUI_bundle from '@salesforce/resourceUrl/jQueryUI';
-import sf_slickgrid_bundle from '@salesforce/resourceUrl/Sf_SlickGrid'; // the zip described at step 1.1
+import sf_slickGrid_bundle from '@salesforce/resourceUrl/Sf_SlickGrid'; // the zip described at step 1.1
 
-slickgridInitialized = false;
-slickgridLwc;
+slickGridInitialized = false;
+slickGridLwc;
 isLoaded = false;
 dataset = []; // load your data through an Apex Controller with @wire
 
@@ -34,24 +34,24 @@ wiredGetSomeData({ error, data }) {
 }
 
 async renderedCallback() {
-    if (this.slickgridInitialized) {
+    if (this.slickGridInitialized) {
         return;
     }
 
     try {
         // load all CSS Styles
-        await loadStyle(this, `${sf_slickgrid_bundle}/styles/css/slickgrid-theme-salesforce.css`);
+        await loadStyle(this, `${sf_slickGrid_bundle}/styles/css/slickgrid-theme-salesforce.css`);
         // or Google Material Theme
-        // await loadStyle(this, `${sf_slickgrid_bundle}/styles/css/se-slickgrid-theme-material.css`);
+        // await loadStyle(this, `${sf_slickGrid_bundle}/styles/css/se-slickgrid-theme-material.css`);
 
         // load all JS files
         await loadScript(this, `${jQuery_bundle}/jquery.min.js`);
         await loadScript(this, `${jQueryUI_bundle}/jquery-ui.min.js`);
-        await loadScript(this, `${sf_slickgrid_bundle}/slickgrid-vanilla-bundle.js`);
+        await loadScript(this, `${sf_slickGrid_bundle}/slickgrid-vanilla-bundle.js`);
 
         // create the grid (column definitions, grid options & dataset)
         this.initializeGrid();
-        this.slickgridInitialized = true;
+        this.slickGridInitialized = true;
     } catch (error) {
         this.dispatchEvent(new ShowToastEvent({ title: 'Error loading SlickGrid', message: error && error.message || '', variant: 'error', }));
     }
@@ -69,9 +69,9 @@ initializeGrid() {
       /** other options... */ 
     };
 
-    // find your HTML slickgrid container & pass it to the Slicker.GridBundle instantiation
+    // find your HTML slickGrid container & pass it to the Slicker.GridBundle instantiation
     const gridContainerElm = this.template.querySelector(`.myGrid`);
-    this.slickgridLwc = new Slicker.GridBundle(gridContainerElm, this.columnDefinitions, this.gridOptions, this.dataset);
+    this.slickGridLwc = new Slicker.GridBundle(gridContainerElm, this.columnDefinitions, this.gridOptions, this.dataset);
 }
 ```
 
@@ -84,7 +84,7 @@ initializeGrid() {
           </lightning-spinner>
     </div>
 
-    <!-- slickgrid container-->
+    <!-- slickGrid container-->
     <div class="grid-container">
           <div class="myGrid"></div>
     </div>
