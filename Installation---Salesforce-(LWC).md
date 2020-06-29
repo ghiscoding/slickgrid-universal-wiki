@@ -70,6 +70,12 @@ initializeGrid() {
     this.gridOptions = { 
       useSalesforceDefaultGridOptions: true,  // enable this flag to use regular grid options used for SF project
 
+      autoResize: {
+        container: '.grid-container',
+        minHeight: 250,
+        rightPadding: 50,
+        bottomPadding: 75,
+      },
       // datasetIdPropertyName: 'someOtherId', // default is "Id" (case sensitive)
 
       /** other options... */ 
