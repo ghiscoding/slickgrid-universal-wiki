@@ -85,8 +85,8 @@ initializeGrid() {
       },
 
       // or use fixed size
-      gridHeight: 300,
-      gridWidth: 800,
+      // gridHeight: 300,
+      // gridWidth: 800,
 
       // datasetIdPropertyName: 'someOtherId', // default is "Id" (case sensitive)
 
