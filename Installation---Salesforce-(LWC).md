@@ -109,8 +109,8 @@ initializeGrid() {
     </div>
 
     <!-- slickGrid container-->
-    <div class="user-grid">
-          <div class="grid-container"></div>
+    <div class="grid-container">
+          <div class="user-grid"></div>
     </div>
 </template>
 ```
