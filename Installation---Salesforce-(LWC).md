@@ -69,6 +69,9 @@ initializeGrid() {
 
     this.gridOptions = { 
       useSalesforceDefaultGridOptions: true,  // enable this flag to use regular grid options used for SF project
+
+      // datasetIdPropertyName: 'someOtherId', // default is "Id" (case sensitive)
+
       /** other options... */ 
     };
 
