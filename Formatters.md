@@ -108,7 +108,7 @@ export class Example {
 ```
 
 ### Extra Arguments/Params
-What if you want to pass extra arguments that you want to use within the Formatter? You can use `params` for that. For example, let say you have a custom formatter to build a select list (dropdown), you could do it this way:
+What if you want to pass extra arguments that you want to use within the Formatter? You should use `params` for that. For example, let say you have a custom formatter to build a select list (dropdown), you could do it this way:
 ```ts
 let optionList = ['True', 'False'];
 
