@@ -13,7 +13,7 @@ In the same file, load all external files with `renderedCallback` and get your d
 
 Notice below that in the `gridOptions`, there is a flag `useSalesforceDefaultGridOptions` that was added specifically for Salesforce project, it will internally use these [grid options](https://github.com/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/src/salesforce-global-grid-options.ts) for Salesforce (these options are merged with the following default [grid options](https://github.com/ghiscoding/slickgrid-universal/blob/master/packages/common/src/global-grid-options.ts)).
 ```js
-import { LightningElement, api, track, wire } from 'lwc';
+import { LightningElement, api, wire } from 'lwc';
 import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
 
 // Static Resources (jQuery, jQueryUI, Slickgrid, and Icon Font)
@@ -27,6 +27,8 @@ slickGridInitialized = false;
 slickGridLwc;
 isLoaded = false;
 dataset = []; // load your data through an Apex Controller with @wire
+
+@api recordId;
 
 @wire(getSomeData, { recordId: '$recordId' })
 wiredGetSomeData({ error, data }) {
