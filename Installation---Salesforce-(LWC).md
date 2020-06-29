@@ -2,7 +2,7 @@
 This document shows how to get this Slickgrid bundle working with Salesforce LWC (Lighning Web Component). 
 
 ### Step 1. install dependencies (static resources) only once in your org
-The first thing you'll need to do is to add 4 different dependencies as static resources, you can see below the name of each static resources we use in our Salesforce org. The resource named `Sf_SlickGrid` comes from the zip file that gets created every time a new dist build is updated, the zip file can be downloaded [here](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/vanilla-bundle/dist-grid-bundle-zip). 
+The first thing you'll need to do is to add 3 different dependencies as static resources, you can see below the name of each static resources we use in our Salesforce org. The resource named `Sf_SlickGrid` comes from the zip file that gets created every time a new dist build is updated, the zip file can be downloaded [here](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/vanilla-bundle/dist-grid-bundle-zip). 
 
 Download the slickgrid bundle zip file from [here](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/vanilla-bundle/dist-grid-bundle-zip), the zip file is meant to be plug-and-play, just upload it as a static resource and it should work.
 
@@ -40,7 +40,7 @@ async renderedCallback() {
 
     try {
         // load all CSS Styles
-        await loadStyle(this, `${sf_slickgrid_bundle}/styles/css/slickgrid-theme-salesforce.css');
+        await loadStyle(this, `${sf_slickgrid_bundle}/styles/css/slickgrid-theme-salesforce.css`);
         // or Google Material Theme
         // await loadStyle(this, `${sf_slickgrid_bundle}/styles/css/se-slickgrid-theme-material.css`);
 
