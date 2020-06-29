@@ -15,7 +15,7 @@ Notice below that in the `gridOptions`, there is a flag `useSalesforceDefaultGri
 ```js
 import { LightningElement, api, track, wire } from 'lwc';
 import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
-import getQuoteLineItemsByQuoteId from '@salesforce/apex/SlickGridDataService.getQuoteLineItemsByQuoteId';
+import getSomeData from '@salesforce/apex/SomeService.getSomeData';
 
 // Static Resources (jQuery, jQueryUI, Slickgrid, and Icon Font)
 import jQuery_bundle from '@salesforce/resourceUrl/jQuery3';
@@ -27,8 +27,8 @@ slickgridLwc;
 isLoaded = false;
 dataset = []; // load your data through an Apex Controller with @wire
 
-@wire(getQuoteLineItemsByQuoteId, { quoteId: '$recordId' })
-wiredQuoteLines({ error, data }) {
+@wire(getSomeData, { recordId: '$recordId' })
+wiredGetSomeData({ error, data }) {
     if (data) { this.dataset = data; } else if (error) {}
     this.isLoaded = true; // stop the spinner
 }
