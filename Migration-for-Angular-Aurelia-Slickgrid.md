@@ -22,6 +22,7 @@ Note that the `BackendServiceApi` is no longer exposed in the `{Angular|Aurelia}
 You need to use the new `@slickgrid-universal/excel-export` and/or `@slickgrid-universal/file-export` packages and register the service(s) in your grid options as shown below.
 ##### ViewModel
 ```ts
+import { Column, GridOption } from 'angular-slickgrid'; // or 'aurelia-slickgrid'
 import { ExcelExportService } from '@slickgrid-universal/excel-export';
 import { FileExportService } from '@slickgrid-universal/file-export';
 
@@ -39,6 +40,7 @@ export class MyExample {
 ```
 Also, note that the `ExcelExportService` is no longer exposed in the `{Angular|Aurelia}GridInstance`, so if you wish to reference it (for example when you want to use it with an external export button), then create a reference while instantiating it.
 ```ts
+import { Column, GridOption } from 'angular-slickgrid'; // or 'aurelia-slickgrid'
 import { ExcelExportService } from '@slickgrid-universal/excel-export';
 
 export class MyExample {
