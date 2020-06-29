@@ -18,6 +18,40 @@ Some of the Deprecated Code and Feature Changes
 ### Backend Service API
 Note that the `BackendServiceApi` is no longer exposed in the `{Angular|Aurelia}GridInstance`, so if you wish to reference it (for example when you want to use it with an external export button), then create a reference while instantiating it.
 
+##### OData Service
+```ts
+import { Column, GridOption } from 'angular-slickgrid'; // or 'aurelia-slickgrid'
+import { GridOdataService, OdataServiceApi, OdataOption } from '@slickgrid-universal/odata';
+
+export class MyExample {
+  prepareGrid {
+    this.columnDefinitions = [ /*...*/ ];
+    this.gridOptions = {
+      backendServiceApi: {
+        service: new GridOdataService(),
+        options: { /*...*/ } as OdataServiceApi
+    }
+  }
+}
+```
+
+##### GraphQL Service
+```ts
+import { Column, GridOption } from 'angular-slickgrid'; // or 'aurelia-slickgrid'
+import { GraphqlService, GraphqlPaginatedResult, GraphqlServiceApi, } from '@slickgrid-universal/graphql';
+
+export class MyExample {
+  prepareGrid {
+    this.columnDefinitions = [ /*...*/ ];
+    this.gridOptions = {
+      backendServiceApi: {
+        service: new GraphqlService(),
+        options: { /*...*/ } as GraphqlServiceApi
+    }
+  }
+}
+```
+
 ### Export Services
 You need to use the new `@slickgrid-universal/excel-export` and/or `@slickgrid-universal/file-export` packages and register the service(s) in your grid options as shown below.
 ##### ViewModel
@@ -28,6 +62,7 @@ import { FileExportService } from '@slickgrid-universal/file-export';
 
 export class MyExample {
   prepareGrid {
+    this.columnDefinitions = [ /*...*/ ];
     this.gridOptions = {
       enableExcelExport: true,
       enableExport: true,
@@ -47,6 +82,7 @@ export class MyExample {
   excelExportService = new ExcelExportService();
 
   prepareGrid {
+    this.columnDefinitions = [ /*...*/ ];
     this.gridOptions = {
       enableExcelExport: true,
       excelExportOptions: { sanitizeDataExport: true },
