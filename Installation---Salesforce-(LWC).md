@@ -87,7 +87,7 @@ initializeGrid() {
     };
 
     // find your HTML slickGrid container & pass it to the Slicker.GridBundle instantiation
-    const gridContainerElement = this.template.querySelector(`.myGrid`);
+    const gridContainerElement = this.template.querySelector(`.grid-container`);
     this.slickGridLwc = new Slicker.GridBundle(gridContainerElement, this.columnDefinitions, this.gridOptions, this.dataset);
 }
 ```
@@ -103,7 +103,7 @@ initializeGrid() {
 
     <!-- slickGrid container-->
     <div class="grid-container">
-          <div class="myGrid"></div>
+          <div class="grid-container"></div>
     </div>
 </template>
 ```
