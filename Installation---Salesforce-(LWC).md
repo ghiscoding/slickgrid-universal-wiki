@@ -36,8 +36,8 @@ wiredGetSomeData({ error, data }) {
     if (data) {
         this.dataset = data || [];
         
-        if (this.slickgridLwc && Array.isArray(this.dataset)) {
-            this.makeGridEditable(this.isGridEditable);
+        if (window.Slicker && window.Slicker.Utilities && this.slickgridLwc) {
+            this.slickgridLwc.dataset = this.dataset;
         }
     } else if (error) {}
     this.isLoaded = true; // stop the spinner
