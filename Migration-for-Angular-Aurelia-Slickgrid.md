@@ -15,7 +15,7 @@ Some of the Deprecated Code and Feature Changes
 - Header Menu Commands (typo)
   - rename `hideFilterCommands` to singular `hideFilterCommand` since there can only be 1 filter per column
 
-### Backend Service API
+### Backend Service APIs
 Note that the `BackendServiceApi` is no longer exposed in the `{Angular|Aurelia}GridInstance`, so if you wish to reference it (for example when you want to use it with an external export button), then create a reference while instantiating it.
 
 ##### OData Service
