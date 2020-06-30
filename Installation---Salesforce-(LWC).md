@@ -113,7 +113,7 @@ initializeGrid() {
     </div>
 
     <!-- slickGrid container-->
-    <div class="grid-container">
+    <div class="grid-container slds-p-horizontal">
           <div class="user-grid"></div>
     </div>
 </template>
