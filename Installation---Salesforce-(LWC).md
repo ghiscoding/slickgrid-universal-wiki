@@ -55,8 +55,6 @@ async renderedCallback() {
     try {
         // load all CSS Styles
         await loadStyle(this, `${sf_slickGrid_bundle}/styles/css/slickgrid-theme-salesforce.css`);
-        // or Google Material Theme
-        // await loadStyle(this, `${sf_slickGrid_bundle}/styles/css/se-slickgrid-theme-material.css`);
 
         // load all JS files
         await loadScript(this, `${jQuery_bundle}/jquery.min.js`);
