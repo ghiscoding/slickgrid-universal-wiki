@@ -7,7 +7,7 @@ The first thing you'll need to do is to add 3 different dependencies as static r
 Here are the 3 static files
 1. [jQuery3](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/external-libs/jQuery3.zip)
 2. [jQueryUI](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/external-libs/jQueryUI.zip)
-3. [Sf_SlickGrid](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/dist-grid-bundle-zip/slickgrid-vanilla-bundle.zip)
+3. [Sf_SlickGrid](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/dist-grid-bundle-zip/slickgrid-vanilla-bundle.zip) - the filename is `slickgrid-vanilla-bundle.zip` but you must name your static file `Sf_SlickGrid`
 
 
 ### Step 2. load Slickgrid
