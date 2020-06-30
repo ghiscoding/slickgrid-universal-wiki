@@ -30,8 +30,8 @@ Welcome to the slickgrid-universal wiki!
   - [x] Export Text (**separate package**)
   - [x] Extension
   - [x] Filter
-  - [ ] GraphQL (**separate package**)
-  - [ ] OData (**separate package**)
+  - [x] GraphQL (**separate package**)
+  - [x] OData (**separate package**)
   - [x] Grid Event
   - [x] Grid State
   - [x] Grouping & Col Span
@@ -43,11 +43,11 @@ Welcome to the slickgrid-universal wiki!
 - [ ] Others
   - [x] Custom Footer
   - [ ] Dynamically Add Columns
-  - [ ] Grid Presets
-  - [ ] Local Pagination
-  - [ ] Tree View
-    - [ ] Search Filter on any Column
-    - [ ] Sorting from any Column
+  - [x] Grid Presets
+  - [x] Local Pagination
+  - [x] Tree View
+    - [x] Search Filter on any Column
+    - [x] Sorting from any Column
 
 #### Other Todos
 - [x] VScode Chrome Debugger
