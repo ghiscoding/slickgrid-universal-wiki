@@ -5,9 +5,9 @@ This document shows how to get this Slickgrid bundle working with Salesforce LWC
 The first thing you'll need to do is to add 3 different dependencies as static resources, you can see below the name of each static resources we use in our Salesforce org. The resource named `Sf_SlickGrid` comes from the zip file that gets created every time a new dist build is updated, the zip file can be downloaded [here](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/vanilla-bundle/dist-grid-bundle-zip). 
 
 Here are the 3 static files
-1. `jQuery3`
-2. `jQueryUI`
-3. [Sf_SlickGrid](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/vanilla-bundle/dist-grid-bundle-zip)
+1. [jQuery3](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/external-libs/jQuery3.zip)
+2. [jQueryUI](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/external-libs/jQueryUI.zip)
+3. [Sf_SlickGrid](/ghiscoding/slickgrid-universal/tree/master/packages/vanilla-bundle/dist-grid-bundle-zip)
 
 
 ### Step 2. load Slickgrid
