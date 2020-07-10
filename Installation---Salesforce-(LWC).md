@@ -7,11 +7,11 @@ The first thing you'll need to do is to add 3 different dependencies as static r
 #### Here are the 3 static resource files
 Click on the `zip` link and then the `Download` button on the top right to download it locally, then upload it to your org.
 
-| Resource Name | Zip | Notes |
+| Static Resource Name | Zip | Notes |
 | -------- | --- | ----------- |
-| jQuery3 | [zip](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/external-libs/jQuery3.zip) | jQuery version 3.4.1 |
-| jQueryUI | [zip](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/external-libs/jQueryUI.zip) | jQuery UI version 1.12.x |
-| Sf_SlickGrid | [zip](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/dist-grid-bundle-zip/slickgrid-vanilla-bundle.zip) | the filename is `slickgrid-vanilla-bundle.zip` but you must name your static file `Sf_SlickGrid` |
+| `jQuery3` | [zip](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/external-libs/jQuery3.zip) | jQuery version 3.4.1 |
+| `jQueryUI` | [zip](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/external-libs/jQueryUI.zip) | jQuery UI version 1.12.x |
+| `Sf_SlickGrid` | [zip](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/dist-grid-bundle-zip/slickgrid-vanilla-bundle.zip) | filename is `slickgrid-vanilla-bundle.zip` but you must name your static file **`Sf_SlickGrid`** |
 
 
 
