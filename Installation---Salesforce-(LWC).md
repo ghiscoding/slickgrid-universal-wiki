@@ -11,7 +11,7 @@ Click on the `zip` link and then the `Download` button on the top right to downl
 | -------- | --- | ----------- |
 | `jQuery3` | [zip](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/external-libs/jQuery3.zip) | jQuery version 3.4.1 |
 | `jQueryUI` | [zip](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/external-libs/jQueryUI.zip) | jQuery UI version 1.12.x |
-| `Sf_SlickGrid` | [zip](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/dist-grid-bundle-zip/slickgrid-vanilla-bundle.zip) | filename is `slickgrid-vanilla-bundle.zip` but you must name your static file **`Sf_SlickGrid`** |
+| `Sf_SlickGrid` | [zip](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/dist-grid-bundle-zip/slickgrid-vanilla-bundle.zip) | filename is `slickgrid-vanilla-bundle.zip` but you must name your static resource as **`Sf_SlickGrid`** |
 
 
 
