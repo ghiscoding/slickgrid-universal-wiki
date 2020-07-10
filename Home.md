@@ -1,11 +1,14 @@
-Welcome to the slickgrid-universal wiki!
+### Welcome to the Slickgrid-Universal lib!
 
-To get started follow any of these Wikis
-- Angular [Wiki - HOWTO (Step by Step)](https://github.com/ghiscoding/angular-slickgrid/wiki/HOWTO---Step-by-Step)
-- Aurelia [Wiki - HOWTO (Step by Step)](https://github.com/ghiscoding/aurelia-slickgrid/wiki/HOWTO--Step-by-Step)
-- Salesforce [Installation](https://github.com/ghiscoding/slickgrid-universal/wiki/Installation---Salesforce-(LWC))
+To get started follow any of these instruction Wikis
 
-## TODO
+| Framework | Wiki |
+| --------- | ---- |
+| Angular | [Wiki - HOWTO (Step by Step)](https://github.com/ghiscoding/angular-slickgrid/wiki/HOWTO---Step-by-Step) |
+| Aurelia | [Wiki - HOWTO (Step by Step)](https://github.com/ghiscoding/aurelia-slickgrid/wiki/HOWTO--Step-by-Step) |
+| Salesforce | [Installation](https://github.com/ghiscoding/slickgrid-universal/wiki/Installation---Salesforce-(LWC)) |
+
+### TODO
 #### Code
 ##### Legend: (E) must be extended in the external framework
 - [x] Aggregators (4)
