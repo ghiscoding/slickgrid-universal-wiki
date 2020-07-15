@@ -8,6 +8,8 @@ To get started follow any of these instruction Wikis depending on your choice of
 | Aurelia | [Wiki - HOWTO (Step by Step)](https://github.com/ghiscoding/aurelia-slickgrid/wiki/HOWTO--Step-by-Step) |
 | Salesforce | [Installation](/ghiscoding/slickgrid-universal/wiki/Installation---Salesforce-(LWC)) |
 
+----
+
 ### Lib TODOs 
 #### Code
 ##### Legend: (E) must be extended in the external framework
