@@ -45,8 +45,8 @@ wiredGetSomeData({ error, data }) {
     if (data) {
         this.dataset = data || [];
         
-        if (window.Slicker && window.Slicker.Utilities && this.slickgridLwc) {
-            this.slickgridLwc.dataset = this.dataset;
+        if (window.Slicker && window.Slicker.Utilities && this.slickGridLwc) {
+            this.slickGridLwc.dataset = this.dataset;
         }
     } else if (error) {}
     this.isLoaded = true; // stop the spinner
