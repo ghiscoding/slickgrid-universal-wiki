@@ -2,6 +2,7 @@
 
 #### index
 * [Inline Editors](/ghiscoding/slickgrid-universal/wiki/Editors#how-to-use-inline-editors)
+   * [Editor `outputType` and `saveOutputType`](/ghiscoding/slickgrid-universal/wiki/Editors#editor-output-type--save-output-type)
    * [Custom Editor](/ghiscoding/slickgrid-universal/wiki/Editors#custom-inline-editor)
 * [Perform an Action after Inline Edit](/ghiscoding/slickgrid-universal/wiki/Editors#perform-an-action-after-inline-edit)
 * [onClick Action Editor (icon click)](/ghiscoding/slickgrid-universal/wiki/Editors#onclick-action-editor-icon-click)
@@ -76,17 +77,22 @@ this.columnDefinitions = [
 ];
 ```
 
-#### Editor Output Type
-You could also define an `outputType` to an inline editor. The only built-in Editor with this functionality for now is the `dateEditor`. For example, on a date field, we can call this `outputType: FieldType.dateIso` (by default it uses `dateUtc` as the output):
+#### Editor Output Type & Save Output Type
+You could also define an `outputType` and a `saveOutputType` to an inline editor. There is only 1 built-in Editor with this functionality for now which is the `dateEditor`. For example, on a date field, we can call this `outputType: FieldType.dateIso` (by default it uses `dateUtc` as the output):
 ```javascript
 this.columnDefinitions = [
  {
    id: 'start', name: 'Start', field: 'start',
    type: FieldType.date,
-   editor: { model: Editors.date }, outputType: FieldType.dateIso
+   editor: { model: Editors.date }, 
+   type: FieldType.date,              // dataset cell input format
+   // outputType: FieldType.dateUs,   // date picker format
+   saveOutputType: FieldType.dateUtc, // save output date format
   }
 ];
 ```
+
+So to make it more clear, the `saveOutputType` is the format that will be sent to the `onCellChange` event, then the `outputType` is how the date will show up in the date picker (Flatpickr) and finally the `type` is basically the input format (coming from your dataset). Note however that each property are cascading, if 1 property is missing it will go to the next one until 1 is found... for example, on the `onCellChange` if you aren't defining `saveOutputType`, it will try to use `outputType`, if again none is provided it will try to use `type` and finally if none is provided it will use `FieldType.dateIso` as the default.
 
 ## Perform an action After Inline Edit
 #### Recommended way
