@@ -33,15 +33,16 @@ import sf_slickGrid_bundle from '@salesforce/resourceUrl/Sf_SlickGrid'; // the z
 
 import getSomeData from '@salesforce/apex/SomeService.getSomeData';
 
-slickGridInitialized = false;
-slickGridLwc;
-isLoaded = false;
-dataset = []; // load your data through an Apex Controller with @wire
+export default class YourComponent extends LightningElement {
+  slickGridInitialized = false;
+  slickGridLwc;
+  isLoaded = false;
+  dataset = []; // load your data through an Apex Controller with @wire
 
-@api recordId;
+  @api recordId;
 
-@wire(getSomeData, { recordId: '$recordId' })
-wiredGetSomeData({ error, data }) {
+  @wire(getSomeData, { recordId: '$recordId' })
+  wiredGetSomeData({ error, data }) {
     if (data) {
         this.dataset = data || [];
         
@@ -50,9 +51,9 @@ wiredGetSomeData({ error, data }) {
         }
     } else if (error) {}
     this.isLoaded = true; // stop the spinner
-}
+  }
 
-async renderedCallback() {
+  async renderedCallback() {
     if (this.slickGridInitialized) {
         return;
     }
@@ -73,9 +74,9 @@ async renderedCallback() {
     } catch (error) {
         this.dispatchEvent(new ShowToastEvent({ title: 'Error loading SlickGrid', message: error && error.message || '', variant: 'error', }));
     }
-}
+  }
 
-initializeGrid() {
+  initializeGrid() {
     this.columnDefinitions = [
       { id: 'firstName', name: 'First Name', field: 'firstName' },
       { id: 'lastName', name: 'Last Name', field: 'lastName' },
@@ -104,6 +105,7 @@ initializeGrid() {
     // find your HTML slickGrid container & pass it to the Slicker.GridBundle instantiation
     const gridContainerElement = this.template.querySelector(`.user-grid`);
     this.slickGridLwc = new Slicker.GridBundle(gridContainerElement, this.columnDefinitions, this.gridOptions, this.dataset);
+  }
 }
 ```
 
