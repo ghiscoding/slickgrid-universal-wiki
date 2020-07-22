@@ -58,6 +58,8 @@ async renderedCallback() {
     }
 
     try {
+        this.slickGridInitialized = true;
+
         // load all CSS Styles
         await loadStyle(this, `${sf_slickGrid_bundle}/styles/css/slickgrid-theme-salesforce.css`);
 
@@ -67,8 +69,7 @@ async renderedCallback() {
         await loadScript(this, `${sf_slickGrid_bundle}/slickgrid-vanilla-bundle.js`);
 
         // create the grid (column definitions, grid options & dataset)
-        this.initializeGrid();
-        this.slickGridInitialized = true;
+        this.initializeGrid();        
     } catch (error) {
         this.dispatchEvent(new ShowToastEvent({ title: 'Error loading SlickGrid', message: error && error.message || '', variant: 'error', }));
     }
