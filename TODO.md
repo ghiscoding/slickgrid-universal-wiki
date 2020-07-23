@@ -1,0 +1,59 @@
+### Lib TODOs 
+#### Code
+##### Legend: (E) must be extended in the external framework
+- [x] Aggregators (4)
+- [x] Editors (11)
+- [x] Filters (17)
+  - [x] Autocomplete, Single & Multiple Select
+    - (E) each framework must implement the `collectionAsync` 
+- [x] Formatters (31)
+- [ ] Extensions
+  - [x] AutoTooltip
+  - [x] Cell External Copy Manager
+  - [x] Cell Menu
+  - [x] Checkbox Selector
+  - [x] Context Menu
+  - [x] Draggable Grouping
+  - [x] Grid Menu
+  - [x] Header Button
+  - [x] Header Menu
+  - [ ] Resizer
+  - [ ] (E) Row Detail
+  - [x] Row Move
+  - [x] Row Selection
+- [x] Grouping Formatters (12)
+- [x] Sorters (5)
+- [x] Services (14)
+- [x] Others - Vanilla Bundle
+  - [x] Custom Footer
+  - [x] Dynamically Add Columns
+  - [x] Grid Presets
+  - [x] Local Pagination
+  - [x] Tree Data View
+  - [x] Translation Support
+
+#### Other Todos
+- [x] VScode Chrome Debugger
+- [x] Jest Debugger
+- [x] Add Multiple Example Demos with Vanilla implementation
+  - [x] Add GitHub Demo website
+- [x] Add CI/CD (CircleCI or GitHub Actions)
+  - [x] Add Cypress E2E tests
+  - [x] Add Jest Unit tests
+  - [x] Add Jest Code Coverage (codecov)
+  - [x] Build and run on every PR
+  - [x] Add full bundler (all types) build step in CircleCI build
+- [x] Bundle Creation (vanilla bundle)
+  - [ ] Eventually add Unit Tests as a Pre-Bundle task
+- [x] Remove any Deprecated code
+  - [ ] Create a [Migration Guide](https://github.com/ghiscoding/slickgrid-universal/wiki/Migration-for-Angular-Aurelia-Slickgrid) for Angular/Aurelia
+- [x] Add simple input bindings in the demo (e.g. pinned rows input)
+- [x] Add possibility to use SVG instead of Font Family
+- [x] Add Typings (interfaces) for Slick Grid & DataView objects
+  - [x] Add interfaces to all SlickGrid core lib classes & plugins (basically add Types to everything)
+- [x] Copy text from cell doesn't work in SF
+- [x] Remove all Services init method 2nd argument (we can get DataView directly from the Grid object)
+- [ ]  Check why `DOM Purify` doesn't work in SF
+- [ ]  Search for any left `"todo"` in the entire solution
+- [ ]  The Pagination/Footer width is a little off sometime compare to the width of the grid container
+- [ ]  Check why we need to click twice on a Date Editor to get date picker to open when the date is initially empty
