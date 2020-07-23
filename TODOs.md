@@ -53,7 +53,7 @@
   - [x] Add interfaces to all SlickGrid core lib classes & plugins (basically add Types to everything)
 - [x] Copy text from cell doesn't work in SF
 - [x] Remove all Services init method 2nd argument (we can get DataView directly from the Grid object)
+- [x]  Check why we need to click twice on a Date Editor to get date picker to open when the date is initially empty
 - [ ]  Check why `DOM Purify` doesn't work in SF
 - [ ]  Search for any left `"todo"` in the entire solution
 - [ ]  The Pagination/Footer width is a little off sometime compare to the width of the grid container
-- [ ]  Check why we need to click twice on a Date Editor to get date picker to open when the date is initially empty
