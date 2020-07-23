@@ -9,3 +9,9 @@ To get started follow any of these instruction Wikis depending on your choice of
 | Salesforce | [Installation](/ghiscoding/slickgrid-universal/wiki/Installation---Salesforce-(LWC)) |
 
 ----
+
+#### General Subjects
+
+* Column Functionalities
+    * [Editors](/ghiscoding/slickgrid-universal/wiki/Editors)
+    * [Formatters](/ghiscoding/slickgrid-universal/wiki/Formatters)
