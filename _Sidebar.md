@@ -12,3 +12,5 @@
     * [Formatters](/ghiscoding/slickgrid-universal/wiki/Formatters)
 * Grid Functionalities
     * [On Events](/ghiscoding/slickgrid-universal/wiki/Grid-&-DataView-Events)
+---
+* [TODOs](/ghiscoding/slickgrid-universal/wiki/TODOs)
