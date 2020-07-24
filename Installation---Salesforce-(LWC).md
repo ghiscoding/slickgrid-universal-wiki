@@ -35,7 +35,7 @@ import getSomeData from '@salesforce/apex/SomeService.getSomeData';
 
 export default class YourComponent extends LightningElement {
   slickGridInitialized = false;
-  slickGridLwc;
+  sgb;
   isLoaded = false;
   dataset = []; // load your data through an Apex Controller with @wire
 
@@ -46,8 +46,8 @@ export default class YourComponent extends LightningElement {
     if (data) {
         this.dataset = data || [];
         
-        if (window.Slicker && window.Slicker.Utilities && this.slickGridLwc) {
-            this.slickGridLwc.dataset = this.dataset;
+        if (window.Slicker && window.Slicker.Utilities && this.sgb) {
+            this.sgb.dataset = this.dataset;
         }
     } else if (error) {}
     this.isLoaded = true; // stop the spinner
@@ -104,7 +104,7 @@ export default class YourComponent extends LightningElement {
 
     // find your HTML slickGrid container & pass it to the Slicker.GridBundle instantiation
     const gridContainerElement = this.template.querySelector(`.user-grid`);
-    this.slickGridLwc = new Slicker.GridBundle(gridContainerElement, this.columnDefinitions, this.gridOptions, this.dataset);
+    this.sgb = new Slicker.GridBundle(gridContainerElement, this.columnDefinitions, this.gridOptions, this.dataset);
   }
 }
 ```
