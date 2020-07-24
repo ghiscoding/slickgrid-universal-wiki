@@ -54,6 +54,8 @@
 - [x] Copy text from cell doesn't work in SF
 - [x] Remove all Services init method 2nd argument (we can get DataView directly from the Grid object)
 - [x]  Check why we need to click twice on a Date Editor to get date picker to open when the date is initially empty
-- [ ]  Check why `DOM Purify` doesn't work in SF
-- [ ]  Search for any left `"todo"` in the entire solution
-- [ ]  The Pagination/Footer width is a little off sometime compare to the width of the grid container
+- [x] The Pagination/Footer width is a little off sometime compare to the width of the grid container
+- [ ] See if we can make all vanilla-grid-bundle services as readonly
+- [ ] Check why `DOM Purify` doesn't work in SF
+- [ ] Move resizer code into Service 
+- [ ] See if we can get all the `instances` as `readonly` class members
