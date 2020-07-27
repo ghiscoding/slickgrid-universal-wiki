@@ -18,9 +18,27 @@ Click on the `zip` link and then the `Download` button on the top right to downl
 ### Step 2. load Slickgrid
 Create all the Static Resources that are required by Slickgrid as shown below (they could be different names in your org).
 
+###### Template
+```html
+<template>
+    <!-- show a spinner -->
+    <div if:false={isLoaded} class="slds-is-relative">
+          <lightning-spinner alternative-text="Loading...">
+          </lightning-spinner>
+    </div>
+
+    <!-- slickGrid container-->
+    <div class="grid-container slds-p-horizontal">
+          <div class="user-grid"></div>
+    </div>
+</template>
+```
+
 In the same file, load all external files with `renderedCallback` and get your data through a `@wire` method. Technically the `@wire` method will be processed before the `renderedCallback` and so you can assume that when calling the `initializeGrid` method we will already have the dataset ready.
 
 Notice below that in the `gridOptions`, there is a flag `useSalesforceDefaultGridOptions` that was added specifically for Salesforce project, it will internally use these [grid options](https://github.com/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/src/salesforce-global-grid-options.ts) for Salesforce (these options are merged with the following default [grid options](https://github.com/ghiscoding/slickgrid-universal/blob/master/packages/common/src/global-grid-options.ts)).
+
+###### Component
 ```js
 import { LightningElement, api, wire } from 'lwc';
 import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
@@ -109,18 +127,4 @@ export default class YourComponent extends LightningElement {
 }
 ```
 
-###### Template
-```html
-<template>
-    <!-- show a spinner -->
-    <div if:false={isLoaded} class="slds-is-relative">
-          <lightning-spinner alternative-text="Loading...">
-          </lightning-spinner>
-    </div>
 
-    <!-- slickGrid container-->
-    <div class="grid-container slds-p-horizontal">
-          <div class="user-grid"></div>
-    </div>
-</template>
-```
