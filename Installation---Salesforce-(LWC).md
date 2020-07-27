@@ -18,7 +18,7 @@ Click on the `zip` link and then the `Download` button on the top right to downl
 ### Step 2. load Slickgrid
 Create all the Static Resources that are required by Slickgrid as shown below (they could be different names in your org).
 
-###### Template
+###### View
 ```html
 <template>
     <!-- show a spinner -->
