@@ -22,5 +22,6 @@ To get started follow any of these instruction Wikis depending on your choice of
     * [Global Grid Options](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/global-grid-options.ts)
     * [Sales Global Grid Options](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/src/salesforce-global-grid-options.ts)
 
+---
 ### Salesforce Demo Snapshot
 ![Slickgrid in Salesforce](https://i.imgur.com/YzkSbcD.png)
