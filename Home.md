@@ -2,12 +2,11 @@
 
 To get started follow any of these instruction Wikis depending on your choice of Framework.
 
-| Framework | Wiki |
-| --------- | ---- |
-| Angular | [Wiki - HOWTO (Step by Step)](https://github.com/ghiscoding/angular-slickgrid/wiki/HOWTO---Step-by-Step) |
-| Aurelia | [Wiki - HOWTO (Step by Step)](https://github.com/ghiscoding/aurelia-slickgrid/wiki/HOWTO--Step-by-Step) |
-| Salesforce | [Installation](/ghiscoding/slickgrid-universal/wiki/Installation---Salesforce-(LWC)) |
-
+| Framework | Wiki | Demo |
+| --------- | ---- | ---- |
+| Angular | [Wiki - HOWTO (Step by Step)](https://github.com/ghiscoding/angular-slickgrid/wiki/HOWTO---Step-by-Step) | [Live Demo](https://ghiscoding.github.io/Angular-Slickgrid/)
+| Aurelia | [Wiki - HOWTO (Step by Step)](https://github.com/ghiscoding/aurelia-slickgrid/wiki/HOWTO--Step-by-Step) | [Live Demo](https://ghiscoding.github.io/aurelia-slickgrid/)
+| Salesforce | [Installation](/ghiscoding/slickgrid-universal/wiki/Installation---Salesforce-(LWC)) | [Snapshot]()
 ----
 
 #### General Subjects
@@ -15,3 +14,6 @@ To get started follow any of these instruction Wikis depending on your choice of
 * Column Functionalities
     * [Editors](/ghiscoding/slickgrid-universal/wiki/Editors)
     * [Formatters](/ghiscoding/slickgrid-universal/wiki/Formatters)
+
+### Salesforce Demo Snapshot
+![Slickgrid in Salesforce](https://i.imgur.com/lA5M9Kz.png)
