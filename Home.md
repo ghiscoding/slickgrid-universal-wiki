@@ -16,4 +16,4 @@ To get started follow any of these instruction Wikis depending on your choice of
     * [Formatters](/ghiscoding/slickgrid-universal/wiki/Formatters)
 
 ### Salesforce Demo Snapshot
-![Slickgrid in Salesforce](https://i.imgur.com/lA5M9Kz.png)
+![Slickgrid in Salesforce](https://i.imgur.com/YzkSbcD.png)
