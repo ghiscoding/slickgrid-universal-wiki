@@ -18,10 +18,13 @@
 - [Disabling specific cell Edit](/ghiscoding/slickgrid-universal/wiki/Editors#disabling-specific-cell-edit)
 - [Editors on Mobile Phone](/ghiscoding/slickgrid-universal/wiki/Editors#editors-on-mobile-phone)
 
-## Inline Editors
+## Description
 `Slickgrid-Universal` ships with a few default inline editors (checkbox, dateEditor, float, integer, text, longText). You can see the full list [here](/ghiscoding/slickgrid-universal/tree/master/packages/common/src/editors).
 
 **Note:** For the Float Editor, you can provide decimal places with `params: { decimalPlaces: 2 }` to your column definition else it will be 0 decimal places by default.
+
+### Required Grid Option
+Editors won't work without the flag `enableCellNavigation: true` set in your Grid Options, so make sure to always add that enabled.
 
 ### Demo
 ##### with plain javascript/jQuery
@@ -50,6 +53,11 @@ this.columnDefinitions = [
     type: FieldType.number, editor: { model: Editors.checkbox } 
   }
 ];
+
+this.gridOptions {
+  enableCellNavigation: true, // <<-- VERY IMPORTANT, it won't work without this flag enabled
+  editable: true,
+};
 ```
 
 #### SalesForce (ES6)
