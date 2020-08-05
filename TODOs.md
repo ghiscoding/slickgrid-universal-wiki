@@ -7,7 +7,7 @@
   - [x] Autocomplete, Single & Multiple Select
     - (E) each framework must implement the `collectionAsync` 
 - [x] Formatters (31)
-- [ ] Extensions
+- [ ] Extensions (12/13)
   - [x] AutoTooltip
   - [x] Cell External Copy Manager
   - [x] Cell Menu
@@ -17,7 +17,7 @@
   - [x] Grid Menu
   - [x] Header Button
   - [x] Header Menu
-  - [ ] Resizer
+  - [x] Resizer
   - [ ] (E) Row Detail
   - [x] Row Move
   - [x] Row Selection
