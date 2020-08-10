@@ -2,7 +2,7 @@
 - [Using fixed `collection` or `collectionAsync`](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#using-collection-or-collectionasync)
 - [Filter Options (`AutocompleteOption` interface)](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#filter-options-autocompleteoption-interface)
 - [Using Remote API](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#using-external-remote-api)
-  - [with `renderItem` + custom Layout (`twoRows` or `fourCorners`)](/slickgrid-universal/wiki/AutoComplete-Editor#remote-api-with-renderitem--custom-layout-2-rows-or-4-corners)
+  - [with `renderItem` + custom Layout (`twoRows` or `fourCorners`)](https://github.com/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#remote-api-with-renderitem--custom-layout-tworows-or-fourcorners)
 - [Force User Input](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#autocomplete---force-user-input)
 - [Animated Gif Demo](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#animated-gif-demo)
 
