@@ -328,8 +328,8 @@ You can also use the `minLength` to limit the autocomplete text to `0` character
 ### Basic (default jQuery UI layout)
 ![](https://user-images.githubusercontent.com/643976/50624023-d5e16c80-0ee9-11e9-809c-f98967953ba4.gif)
 
-### with `twoRows` custom layout
+### with `twoRows` custom layout (without optional left icon)
 ![](https://i.imgur.com/V9XzVXS.gif)
 
-### with `fourCorners` custom layout
+### with `fourCorners` custom layout (with extra optional left icon)
 ![](https://i.imgur.com/LirGZFm.gif)
