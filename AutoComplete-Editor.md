@@ -95,7 +95,7 @@ export class GridBasicComponent {
       // your columns definition
     this.columnDefinitions = [
       {
-        id: 'cityOfOrigin', name: 'City of Origin', field: 'cityOfOrigin',
+        id: 'product', name: 'Product', field: 'product',
         filterable: true,
         minWidth: 100,
         editor: {
@@ -156,7 +156,7 @@ export class GridBasicComponent {
       // your columns definition
     this.columnDefinitions = [
       {
-        id: 'cityOfOrigin', name: 'City of Origin', field: 'cityOfOrigin',
+        id: 'product', name: 'Product', field: 'product',
         filterable: true,
         minWidth: 100,
         editor: {
