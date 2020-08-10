@@ -79,7 +79,7 @@ filter: {
 ## Using External Remote API
 You could also use external 3rd party Web API (can be JSONP query or regular JSON). This will make a much shorter result since it will only return a small subset of what will be displayed in the AutoComplete Editor or Filter. For example, we could use GeoBytes which provide a JSONP Query API for the cities of the world, you can imagine the entire list of cities would be way too big to download locally, so this is why we use such API.
 
-### with `renderItem` + custom layout (2 rows or 4 corners)
+### Remote API with `renderItem` + custom layout (2 rows or 4 corners)
 The lib comes with 2 built-in custom layouts, these 2 layouts also have SASS variables if anyone wants to style it differently. When using the `renderItem`, it will require the user to provide a `layout` (2 possible options `twoRows` or `fourCorners`) and also a `templateCallback` that will be executed when rendering the AutoComplete Search List Item. For example:
 
 ##### Component
@@ -140,7 +140,7 @@ export class GridBasicComponent {
 }
 ```
 
-### with jQuery UI `_renderItem` callback + custom layout (2 rows or 4 corners)
+### Remote API with jQuery UI `_renderItem` callback + custom layout (2 rows or 4 corners)
 The previous example can also be written using the jQuery UI `_renderItem` callback and adding `classes`, this is actually what Slickgrid-Universal does internally, you can do it yourself if you wish to have more control on the render callback result. 
 
 ##### Component
