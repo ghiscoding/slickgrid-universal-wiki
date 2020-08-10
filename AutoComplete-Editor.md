@@ -325,7 +325,7 @@ If you want to add the autocomplete functionality but want the user to be able t
 You can also use the `minLength` to limit the autocomplete text to `0` characters or more, the default number is `3`.
 
 ## Animated Gif Demo
-### Basic
+### Basic (default jQuery UI layout)
 ![](https://user-images.githubusercontent.com/643976/50624023-d5e16c80-0ee9-11e9-809c-f98967953ba4.gif)
 
 ### with `twoRows` custom layout
