@@ -3,7 +3,6 @@
 - [Filter Options (`AutocompleteOption` interface)](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#filter-options-autocompleteoption-interface)
 - [Using Remote API](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#using-external-remote-api)
 - [Force User Input](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#autocomplete---force-user-input)
-- [Update Filters Dynamically](/ghiscoding/slickgrid-universal/wiki/Input-Editor#update-filters-dynamically)
 - [Animated Gif Demo](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#animated-gif-demo)
 
 ### Demo
@@ -80,18 +79,160 @@ filter: {
 ## Using External Remote API
 You could also use external 3rd party Web API (can be JSONP query or regular JSON). This will make a much shorter result since it will only return a small subset of what will be displayed in the AutoComplete Editor or Filter. For example, we could use GeoBytes which provide a JSONP Query API for the cities of the world, you can imagine the entire list of cities would be way too big to download locally, so this is why we use such API.
 
-#### Note
-I don't have time to invest in finding how to use JSONP + CORS in Aurelia, if someone wants to submit a PR (Pull Request) with the proper Aurelia code, I would be happy to merge the code and update the Wiki. For now, I'll simply make a quick and easy example with the jQuery `$.ajax` call just for you to get the idea of how it works.
+### with `renderItem` + custom layout (2 rows or 4 corners)
+The lib comes with 2 built-in custom layouts, these 2 layouts also have SASS variables if anyone wants to style it differently. When using the `renderItem`, it will require the user to provide a `layout` (2 possible options `twoRows` or `fourCorners`) and also a `templateCallback` that will be executed when rendering the AutoComplete Search List Item. For example:
 
-##### View
-```html
-<aurelia-slickgrid
-    grid-id="gridId"
-    column-definitions.bind="columnDefinitions"
-    grid-options.bind="gridOptions"
-    dataset.bind="dataset">
-</aurelia-slickgrid>
+##### Component
+```javascript
+export class GridBasicComponent {
+  columnDefinitions: Column[];
+  gridOptions: GridOption;
+  dataset: any[];
+
+  initializeGrid() {
+      // your columns definition
+    this.columnDefinitions = [
+      {
+        id: 'cityOfOrigin', name: 'City of Origin', field: 'cityOfOrigin',
+        filterable: true,
+        minWidth: 100,
+        editor: {
+          model: Editors.autoComplete,
+          alwaysSaveOnEnterKey: true,
+          customStructure: {
+            label: 'itemName',
+            value: 'id'
+          },
+          editorOptions: {
+            openSearchListOnFocus: true,
+            minLength: 1,
+            source: (request, response) => {
+              const products = yourAsyncApiCall(request.term) // typically you'll want to return no more than 10 results
+                 .then(result => response((results.length > 0) ? results : [{ label: 'No match found.', value: '' }]); })
+                 .catch(error => console.log('Error:', error);
+            },
+            renderItem: {
+              layout: 'twoRows',
+              templateCallback: (item: any) => `<div class="autocomplete-container-list">
+                <div class="autocomplete-left">
+                  <span class="mdi ${item.icon} mdi-26px"></span>
+                </div>
+                <div>
+                  <span class="autocomplete-top-left">
+                    <span class="mdi ${item.itemTypeName === 'I' ? 'mdi-information-outline' : 'mdi-content-copy'} mdi-14px"></span>
+                    ${item.itemName}
+                  </span>
+                <div>
+              </div>
+              <div>
+                <div class="autocomplete-bottom-left">${item.itemNameTranslated}</div>
+              </div>`,
+            },
+          } as AutocompleteOption,
+        },
+      }
+    ];
+
+    this.gridOptions = {
+      // your grid options config
+    }
+  }
+}
 ```
+
+### with jQuery UI `_renderItem` callback + custom layout (2 rows or 4 corners)
+The previous example can also be written using the jQuery UI `_renderItem` callback and adding `classes`, this is actually what Slickgrid-Universal does internally, you can do it yourself if you wish to have more control on the render callback result. 
+
+##### Component
+```javascript
+export class GridBasicComponent {
+  columnDefinitions: Column[];
+  gridOptions: GridOption;
+  dataset: any[];
+
+  initializeGrid() {
+      // your columns definition
+    this.columnDefinitions = [
+      {
+        id: 'cityOfOrigin', name: 'City of Origin', field: 'cityOfOrigin',
+        filterable: true,
+        minWidth: 100,
+        editor: {
+          model: Editors.autoComplete,
+          alwaysSaveOnEnterKey: true,
+          customStructure: {
+            label: 'itemName',
+            value: 'id'
+          },
+          editorOptions: {
+            openSearchListOnFocus: true,
+            minLength: 1,
+            classes: {
+              // choose a custom style layout
+              // 'ui-autocomplete': 'autocomplete-custom-two-rows', 
+              'ui-autocomplete': 'autocomplete-custom-four-corners',
+            },
+            source: (request, response) => {
+              const products = yourAsyncApiCall(request.term) // typically you'll want to return no more than 10 results
+                 .then(result => response((results.length > 0) ? results : [{ label: 'No match found.', value: '' }]); })
+                 .catch(error => console.log('Error:', error);
+            },
+            renderItem: {
+              layout: 'twoRows',
+              templateCallback: (item: any) => `<div class="autocomplete-container-list">
+                <div class="autocomplete-left">
+                  <span class="mdi ${item.icon} mdi-26px"></span>
+                </div>
+                <div>
+                  <span class="autocomplete-top-left">
+                    <span class="mdi ${item.itemTypeName === 'I' ? 'mdi-information-outline' : 'mdi-content-copy'} mdi-14px"></span>
+                    ${item.itemName}
+                  </span>
+                <div>
+              </div>
+              <div>
+                <div class="autocomplete-bottom-left">${item.itemNameTranslated}</div>
+              </div>`,
+            },
+          } as AutocompleteOption,
+          callbacks: {
+             // callback on the jQuery UI AutoComplete on the instance, example from https://jqueryui.com/autocomplete/#custom-data
+             _renderItem: (ul: HTMLElement, item: any) => {
+                const template = `<div class="autocomplete-container-list">
+                      <div class="autocomplete-left">
+                        <!--<img src="http://i.stack.imgur.com/pC1Tv.jpg" width="50" />-->
+                        <span class="mdi ${item.icon} mdi-26px"></span>
+                      </div>
+                      <div>
+                        <span class="autocomplete-top-left">
+                          <span class="mdi ${item.itemTypeName === 'I' ? 'mdi-information-outline' : 'mdi-content-copy'} mdi-14px"></span>
+                          ${item.itemName}
+                        </span>
+                      <div>
+                    </div>
+                    <div>
+                      <div class="autocomplete-bottom-left">${item.itemNameTranslated}</div>
+                    </div>`;
+
+                return $('<li></li>')
+                  .data('item.autocomplete', item)
+                  .append(template)
+                  .appendTo(ul);
+              }
+          },
+        },
+      }
+    ];
+
+    this.gridOptions = {
+      // your grid options config
+    }
+  }
+}
+```
+
+#### with JSONP
+Example from an external remote API (geobytes) returning a JSONP response. 
 
 ##### Component
 ```javascript
