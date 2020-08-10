@@ -82,6 +82,7 @@ filter: {
 You could also use external 3rd party Web API (can be JSONP query or regular JSON). This will make a much shorter result since it will only return a small subset of what will be displayed in the AutoComplete Editor or Filter. For example, we could use GeoBytes which provide a JSONP Query API for the cities of the world, you can imagine the entire list of cities would be way too big to download locally, so this is why we use such API.
 
 ### Remote API with `renderItem` + custom layout (`twoRows` or `fourCorners`)
+#### See animated gif ([twoRows](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#with-tworows-custom-layout-without-optional-left-icon) or [fourCorners]())
 The lib comes with 2 built-in custom layouts, these 2 layouts also have SASS variables if anyone wants to style it differently. When using the `renderItem`, it will require the user to provide a `layout` (2 possible options `twoRows` or `fourCorners`) and also a `templateCallback` that will be executed when rendering the AutoComplete Search List Item. For example:
 
 ##### Component
