@@ -12,20 +12,10 @@
 [Demo Page](https://ghiscoding.github.io/slickgrid-universal/#/example11) | [Demo Component](/ghiscoding/slickgrid-universal/blob/master/examples/webpack-demo-vanilla-bundle/src/examples/example11.ts)
 
 ### Introduction
-AutoComplete is a functionality that let the user start typing characters and the autocomplete will try to give suggestions according to the characters entered. The collection can be a fxied JSON files (collection of strings or objects) or can also be an external remote resource to an external API. For a demo of what that could look like, take a look at the [animated gif demo](/ghiscoding/aurelia-universal/wiki/AutoComplete-Editor#animated-gif-demo) below.
+AutoComplete is a functionality that let the user start typing characters and the autocomplete will try to give suggestions according to the characters entered. The collection can be a fxied JSON files (collection of strings or objects) or can also be an external remote resource to an external API. For a demo of what that could look like, take a look at the [animated gif demo](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#animated-gif-demo) below.
 
 ## Using `collection` or `collectionAsync`
 If you want to pass the entire list to the AutoComplete (like a JSON file or a Web API call), you can do so using the `collection` or the `collectionAsync` (the latter will load it asynchronously). You can also see that the Editor and Filter have almost the exact same configuration (apart from the `model` that is obviously different).
-
-##### View
-```html
-<aurelia-slickgrid
-    grid-id="gridId"
-    column-definitions.bind="columnDefinitions"
-    grid-options.bind="gridOptions"
-    dataset.bind="dataset">
-</aurelia-slickgrid>
-```
 
 ##### Component
 ```javascript
@@ -114,6 +104,47 @@ filter: {
 ## Using External Remote API
 You could also use external 3rd party Web API (can be JSONP query or regular JSON). This will make a much shorter result since it will only return a small subset of what will be displayed in the AutoComplete Editor or Filter. For example, we could use GeoBytes which provide a JSONP Query API for the cities of the world, you can imagine the entire list of cities would be way too big to download locally, so this is why we use such API.
 
+### Remote API (basic)
+The basic functionality will use built-in jQuery UI styling that is to display a label/value pair item result.
+
+##### Component
+```javascript
+export class GridBasicComponent {
+  columnDefinitions: Column[];
+  gridOptions: GridOption;
+  dataset: any[];
+
+  initializeGrid() {
+      // your columns definition
+    this.columnDefinitions = [
+      {
+        id: 'product', name: 'Product', field: 'product',
+        filterable: true,
+        minWidth: 100,
+        editor: {
+          model: Editors.autoComplete,
+          alwaysSaveOnEnterKey: true,
+          editorOptions: {
+            openSearchListOnFocus: true,
+            minLength: 1,
+            source: (request, response) => {
+              // assuming your API call returns a label/value pair
+              yourAsyncApiCall(request.term) // typically you'll want to return no more than 10 results
+                 .then(result => response((results.length > 0) ? results : [{ label: 'No match found.', value: '' }]); })
+                 .catch(error => console.log('Error:', error);
+            },
+          } as AutocompleteOption,
+        },
+      }
+    ];
+
+    this.gridOptions = {
+      // your grid options config
+    }
+  }
+}
+```
+
 ### Remote API with `renderItem` + custom layout (`twoRows` or `fourCorners`)
 #### See animated gif ([twoRows](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#with-tworows-custom-layout-without-optional-left-icon) or [fourCorners](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#with-fourcorners-custom-layout-with-extra-optional-left-icon))
 The lib comes with 2 built-in custom layouts, these 2 layouts also have SASS variables if anyone wants to style it differently. When using the `renderItem`, it will require the user to provide a `layout` (2 possible options `twoRows` or `fourCorners`) and also a `templateCallback` that will be executed when rendering the AutoComplete Search List Item. For example:
@@ -143,7 +174,7 @@ export class GridBasicComponent {
             openSearchListOnFocus: true,
             minLength: 1,
             source: (request, response) => {
-              const products = yourAsyncApiCall(request.term) // typically you'll want to return no more than 10 results
+              yourAsyncApiCall(request.term) // typically you'll want to return no more than 10 results
                  .then(result => response((results.length > 0) ? results : [{ label: 'No match found.', value: '' }]); })
                  .catch(error => console.log('Error:', error);
             },
@@ -210,7 +241,7 @@ export class GridBasicComponent {
               'ui-autocomplete': 'autocomplete-custom-four-corners',
             },
             source: (request, response) => {
-              const products = yourAsyncApiCall(request.term) // typically you'll want to return no more than 10 results
+              yourAsyncApiCall(request.term) // typically you'll want to return no more than 10 results
                  .then(result => response((results.length > 0) ? results : [{ label: 'No match found.', value: '' }]); })
                  .catch(error => console.log('Error:', error);
             },
