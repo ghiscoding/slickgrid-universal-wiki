@@ -10,6 +10,7 @@
     * [Sales Global Grid Options](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/src/salesforce-global-grid-options.ts)
 * Column Functionalities
     * [Editors](/ghiscoding/slickgrid-universal/wiki/Editors)
+      * [AutoComplete](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor)
     * [Formatters](/ghiscoding/slickgrid-universal/wiki/Formatters)
 * Grid Functionalities
     * [On Events](/ghiscoding/slickgrid-universal/wiki/Grid-&-DataView-Events)
