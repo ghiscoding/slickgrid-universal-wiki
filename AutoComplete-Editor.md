@@ -146,6 +146,34 @@ export class GridBasicComponent {
 }
 ```
 
+### Remote API (basic with object result)
+This is the preferred way of dealing with the AutoComplete, the main reason is because the AutoComplete uses an `<input/>` and that means we can only keep 1 value and if we do then we lose the text label and so using an Object Result makes more sense. Note however that you'll need a bit more code that is because we'll use the `FieldType.Object` and so we need to provide a custom `SortComparer` and also a custom `Formatters` and for them to work we'll provide a `dataKey` (the value) and a `labelKey` (the label) as shown below.
+```ts
+this.columnDefinitions = [
+  {
+    id: 'product', name: 'Product', field: 'product',
+    dataKey: 'id',
+    labelKey: 'name', // (id/name) pair to override default (value/label) pair
+    editor: {
+      model: Editors.autoComplete,
+      alwaysSaveOnEnterKey: true,
+      type: 'object',
+      sortComparer: SortComparers.objectString,
+      editorOptions: {
+            openSearchListOnFocus: true,
+            minLength: 1,
+            source: (request, response) => {
+              // assuming your API call returns a label/value pair
+              yourAsyncApiCall(request.term) // typically you'll want to return no more than 10 results
+                 .then(result => response((results.length > 0) ? results : [{ label: 'No match found.', value: '' }]); })
+                 .catch(error => console.log('Error:', error);
+            },
+          } as AutocompleteOption,
+        },
+      }
+    ];
+```
+
 ### Remote API with `renderItem` + custom layout (`twoRows` or `fourCorners`)
 #### See animated gif ([twoRows](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#with-tworows-custom-layout-without-optional-left-icon) or [fourCorners](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#with-fourcorners-custom-layout-with-extra-optional-left-icon))
 The lib comes with 2 built-in custom layouts, these 2 layouts also have SASS variables if anyone wants to style it differently. When using the `renderItem`, it will require the user to provide a `layout` (2 possible options `twoRows` or `fourCorners`) and also a `templateCallback` that will be executed when rendering the AutoComplete Search List Item. For example:
