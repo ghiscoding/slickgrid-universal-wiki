@@ -67,6 +67,38 @@ export class GridBasicComponent {
 }
 ```
 
+### Collection Label Render HTML
+By default HTML is not rendered and the `label` will simply show HTML as text. But in some cases you might want to render it, you can do so by enabling the `enableRenderHtml` flag.
+
+**NOTE:** this is currently only used by the Editors that have a `collection` which are the `MultipleSelect` & `SingleSelect` Editors.
+
+```javascript
+this.columnDefinitions = [
+  {
+    id: 'effort-driven', name: 'Effort Driven', field: 'effortDriven',
+    formatter: Formatters.checkmark,
+    type: FieldType.boolean,
+    editor: {
+      model: Filters.autoComplete,
+      placeholder: '&#128269; search city',
+      type: FieldType.string,
+
+      // example with a fixed Collection (or collectionAsync)
+      filterOptions: {
+        openSearchListOnFocus: true, // display the list on focus of the autocomplete (without the need to type anything)
+      },
+      enableRenderHtml: true, // this flag only works with a fixed Collection
+      // collectionAsync: this.http.get(URL_COUNTRIES_COLLECTION),
+      collection: [
+        { value: '', label: '' },
+        { value: true, label: 'True', labelPrefix: `<i class="mdi mdi-plus"></i> ` },
+        { value: false, label: 'False', labelPrefix: `<i class="mdi mdi-minus"></i> ` }
+      ],
+    }
+  }
+];
+```
+
 ### Filter Options (`AutocompleteOption` interface)
 All the available options that can be provided as `filterOptions` to your column definitions can be found under this [AutocompleteOption interface](/ghiscoding/Angular-Slickgrid/blob/master/src/app/modules/angular-slickgrid/models/autocompleteOption.interface.ts) and you should cast your `filterOptions` to that interface to make sure that you use only valid options of the jQueryUI autocomplete library. 
 
