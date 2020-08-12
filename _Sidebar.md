@@ -2,6 +2,8 @@
     * [Angular/Aurelia](/ghiscoding/slickgrid-universal/wiki/Migration-for-Angular-Aurelia-Slickgrid)
 * Installation
     * [Salesforce (LWC)](/ghiscoding/slickgrid-universal/wiki/Installation---Salesforce-(LWC))
+* Styling
+   * [SVG Icons](/ghiscoding/slickgrid-universal/wiki/SVG-Icons)
 * Interfaces/Models
     * [Column Options](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/interfaces/column.interface.ts)
     * [Field Type](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/enums/fieldType.enum.ts)
