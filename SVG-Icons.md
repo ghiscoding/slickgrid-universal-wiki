@@ -1,17 +1,17 @@
 #### index
-- [Using built-in Themes](/ghiscoding/Angular-Slickgrid/wiki/SVG-Icons#using-built-in-themes)
-- [Using SVG with SASS](/ghiscoding/Angular-Slickgrid/wiki/SVG-Icons#using-custom-svgs-with-sass)
-- [How to change SVG color?](/ghiscoding/Angular-Slickgrid/wiki/SVG-Icons#how-to-change-svg-color)
+- [Using built-in Themes](/ghiscoding/slickgrid-universal/wiki/SVG-Icons#using-built-in-themes)
+- [Using SVG with SASS](/ghiscoding/slickgrid-universal/wiki/SVG-Icons#using-custom-svgs-with-sass)
+- [How to change SVG color?](/ghiscoding/slickgrid-universal/wiki/SVG-Icons#how-to-change-svg-color)
 
 
 ### Description
-Angular-Slickgrid was built with a Font set, mainly Font-Awesome 4, and if you use SASS it was easy enough to replace Font-Awesome to any other Font based set. The question is how do we use SVG instead of a Font? Most frameworks are switching to SVGs instead of Fonts (for smaller size and also efficiency). Angular-Slickgrid now has 2/3 Styling Themes that support SVGs which are Material Design & Salesforce Themes. These 2 new Themes use a subset of [Material Design Icons](https://materialdesignicons.com/) SVGs (even a portion of the Salesforce theme). There are no Font-Awesome 5, I wouldn't mind adding a new Theme for that and if you wish to contribute then please open a new issue.
+Slickgrid-Universal was built with a Font set, mainly Font-Awesome 4, and if you use SASS it was easy enough to replace Font-Awesome to any other Font based set. The question is how do we use SVG instead of a Font? Most frameworks are switching to SVGs instead of Fonts (for smaller size and also efficiency). Slickgrid-Universal now has 2/3 Styling Themes that support SVGs which are Material Design & Salesforce Themes. These 2 new Themes use a subset of [Material Design Icons](https://materialdesignicons.com/) SVGs (even a portion of the Salesforce theme). There are no Font-Awesome 5, I wouldn't mind adding a new Theme for that and if you wish to contribute then please open a new issue.
 
 If you use SASS, you will find out that it's super easy to use either (Font) or (SVG), you simply have to replace the SASS necessary variables, more on that later.
 
 ### Demo
-- Material Theme - [demo](https://ghiscoding.github.io/Angular-Slickgrid/#/tree-data-parent-child)
-- Salesforce Theme - [demo](https://ghiscoding.github.io/Angular-Slickgrid/#/tree-data-hierarchical)
+- Material Theme - [demo](https://ghiscoding.github.io/slickgrid-universal/#/example05)
+- Salesforce Theme - [demo](https://ghiscoding.github.io/slickgrid-universal/#/example06)
 
 ### Using built-in Themes
 The Material & Salesforce Themes are now using SVGs for the icons used by the grid. Each built-in Themes have CSS and SASS files associated with each theme. To take benefit of this, just import whichever CSS/SASS file associated with the Theme you wish to use.
@@ -19,11 +19,11 @@ The Material & Salesforce Themes are now using SVGs for the icons used by the gr
 ##### with CSS
 ```scss
 /* style.css */
-@import 'angular-slickgrid/styles/css/slickgrid-theme-bootstrap.css';
+@import '@slickgrid-universal/common/dist/styles/css/slickgrid-theme-bootstrap.css';
 
 // or other Themes
-// @import 'angular-slickgrid/styles/css/slickgrid-theme-material.css';
-// @import 'angular-slickgrid/styles/css/slickgrid-theme-salesforce.css';
+// @import '@slickgrid-universal/common/dist/styles/styles/css/slickgrid-theme-material.css';
+// @import '@slickgrid-universal/common/dist/styles/css/slickgrid-theme-salesforce.css';
 ```
 
 ##### with SASS
@@ -32,15 +32,15 @@ The Material & Salesforce Themes are now using SVGs for the icons used by the gr
 $primary-color: green;
 
 /* style.scss */
-@import 'angular-slickgrid/styles/sass/slickgrid-theme-bootstrap.scss';
+@import '@slickgrid-universal/common/dist/styles/sass/slickgrid-theme-bootstrap.scss';
 
 // or other Themes
-// @import 'angular-slickgrid/styles/sass/slickgrid-theme-material.scss';
-// @import 'angular-slickgrid/styles/sass/slickgrid-theme-salesforce.scss';
+// @import '@slickgrid-universal/common/dist/styles/sass/slickgrid-theme-material.scss';
+// @import '@slickgrid-universal/common/dist/styles/sass/slickgrid-theme-salesforce.scss';
 ```
 
 ### Using Custom SVGs with SASS
-You could use Custom SVGs and create your own Theme and/or a different set of SVG Icons, each of the icons used in Angular-Slickgrid has an associated SASS variables which allow you to override any one of them. All grid of the icons are loaded with the `content` property of the `:before` pseudo (for example, see this [line](https://github.com/ghiscoding/Angular-Slickgrid/blob/master/src/app/modules/angular-slickgrid/styles/slick-bootstrap.scss#L323)) and the difference between Font and SVG is simple, if you want to use a Font then you use the Font unicode but if you want an SVG then you use a `url` with `svg+xml` as shown below. 
+You could use Custom SVGs and create your own Theme and/or a different set of SVG Icons, each of the icons used in Slickgrid-Universal has an associated SASS variables which allow you to override any one of them. All grid of the icons are loaded with the `content` property of the `:before` pseudo (for example, see this [line](https://github.com/ghiscoding/slickgrid-universal/blob/master/packages/common/src/styles/slick-bootstrap.scss#L322) and the difference between Font and SVG is simple, if you want to use a Font then you use the Font unicode but if you want an SVG then you use a `url` with `svg+xml` as shown below. 
 
 ##### with Font
 ```scss
@@ -52,14 +52,14 @@ $icon-sort-font-size:   13px;
 $icon-sort-width:       13px;
 
 // then on the last line, import the Theme that you wish to override
-@import 'angular-slickgrid/styles/sass/slickgrid-theme-bootstrap.scss';
+@import '@slickgrid-universal/common/dist/styles/sass/slickgrid-theme-bootstrap.scss';
 ```
 
 ##### with SVG
 ```scss
 // a simple utility that will encode a color with hash sign into a valid HTML URL (e.g. #red => %23red)
 // you could also skip the use of this and simply manually change # symbol to %23
-@import 'angular-slickgrid/styles/sass/sass-utilities';
+@import '@slickgrid-universal/common/dist/styles/sass/sass-utilities';
 
 $primary-color: blue;
 
@@ -70,7 +70,7 @@ $icon-sort-font-size:   13px;
 $icon-sort-width:       13px;
 
 // then on the last line, import the Theme that you wish to override
-@import 'angular-slickgrid/styles/sass/slickgrid-theme-material.scss';
+@import '@slickgrid-universal/common/dist/styles/sass/slickgrid-theme-material.scss';
 ```
 
 ### How to change SVG color?
