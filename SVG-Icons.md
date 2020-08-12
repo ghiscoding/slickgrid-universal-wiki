@@ -86,7 +86,7 @@ After lot of research, I found a way to hack it via this SO answer [change any S
 }
 ```
 You might be thinking, like I did, but how to get this long `filter` calculation???
-For that you can visit the following blog post and use its [converter](https://dev.to/jsm91/css-filter-generator-to-convert-from-black-to-target-hex-color-188h) that was posted to answer this SO [question](https://stackoverflow.com/q/42966641/1212166)
+For that you can visit the following blog post and use its **[color filter converter](https://dev.to/jsm91/css-filter-generator-to-convert-from-black-to-target-hex-color-188h)** that was posted to answer this SO [question](https://stackoverflow.com/q/42966641/1212166)
 
 ##### for SASS only
 There is also a SASS Mixin to convert the color using only SASS as posted [here](https://stackoverflow.com/a/62880368/1212166) in the same SO question. That will be part of the lib soon enough and we'll be able to use it this way (much cleaner):
