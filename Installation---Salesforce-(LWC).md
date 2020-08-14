@@ -34,7 +34,7 @@ Create all the Static Resources that are required by Slickgrid as shown below (t
 </template>
 ```
 
-In the same file, load all external files with `renderedCallback` and get your data through a `@wire` method. Technically the `@wire` method will be processed before the `renderedCallback` and so you can assume that when calling the `initializeGrid` method we will already have the dataset ready.
+In the same file, load all external files with `connectedCallback` and get your data through a `@wire` method. Technically the `@wire` method will be processed before the `connectedCallback` and so you can assume that when calling the `initializeGrid` method we will already have the dataset ready.
 
 Notice below that in the `gridOptions`, there is a flag `useSalesforceDefaultGridOptions` that was added specifically for Salesforce project, it will internally use these [grid options](https://github.com/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/src/salesforce-global-grid-options.ts) for Salesforce (these options are merged with the following default [grid options](https://github.com/ghiscoding/slickgrid-universal/blob/master/packages/common/src/global-grid-options.ts)).
 
@@ -71,7 +71,7 @@ export default class YourComponent extends LightningElement {
     this.isLoaded = true; // stop the spinner
   }
 
-  async renderedCallback() {
+  async connectedCallback() {
     if (this.slickGridInitialized) {
         return;
     }
