@@ -2,7 +2,7 @@
 - [Using built-in Themes](/ghiscoding/slickgrid-universal/wiki/SVG-Icons#using-built-in-themes)
 - [Using SVG with SASS](/ghiscoding/slickgrid-universal/wiki/SVG-Icons#using-custom-svgs-with-sass)
 - [How to change SVG color?](/ghiscoding/slickgrid-universal/wiki/SVG-Icons#how-to-change-svg-color)
-
+- [SVG Colors CSS Classes](/ghiscoding/slickgrid-universal/wiki/SVG-Icons#svg-colors-css-classes)
 
 ### Description
 Slickgrid-Universal was built with a Font set, mainly Font-Awesome 4, and if you use SASS it was easy enough to replace Font-Awesome to any other Font based set. The question is how do we use SVG instead of a Font? Most frameworks are switching to SVGs instead of Fonts (for smaller size and also efficiency). Slickgrid-Universal now has 2/3 Styling Themes that support SVGs which are Material Design & Salesforce Themes. These 2 new Themes use a subset of [Material Design Icons](https://materialdesignicons.com/) SVGs (even a portion of the Salesforce theme). There are no Font-Awesome 5, I wouldn't mind adding a new Theme for that and if you wish to contribute then please open a new issue.
