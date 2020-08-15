@@ -99,3 +99,55 @@ There is also a SASS Mixin to convert the color using only SASS as posted [here]
 Note that even though the code looks smaller and more human readable, in reality the code produced will still be a `filter`
 
 `@include recolor(#ff0000, 0.8);` will in fact be converted to `filter: invert(32%) sepia(96%) saturate(7466%) hue-rotate(356deg) brightness(97%) contrast(120%);`
+
+#### SVG Colors CSS Classes
+To help with all of this, we added a few colors (basically took the same colors used by Bootstrap [here](https://getbootstrap.com/docs/4.5/utilities/colors/) but we also added a `light` and `dark` of each colors, they both use a 6% lighter/darker shade (you can override the shade with `$color-lighten-percentage` and the same for darken), all the colors have a lither/darker shade except the `color-light` & `color-dark` which are useless to duplicate. These colors can be used with the `color-X` (for example `color-primary`), also note that the primary color will follow the `$primary-color` that you might have override (it could also be different in each styling theme, shown below is the salesforce theme colors).
+
+**NOTE:** You can use these colors on Text and/or Icon **but** remember that we are using CSS `filter`, that is not the same as using CSS `color` or `background-color`, so don't expect to see the `color` in your CSS but instead look at the `filter`.
+ 
+![image](https://user-images.githubusercontent.com/643976/90322904-fd067980-df27-11ea-9855-e26f1bdab24f.png)
+
+##### HTML Color Test
+```html
+<div>
+  <span class="color-primary">color-primary <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-primary-light">color-primary-light <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-primary-dark">color-primary-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-secondary">color-secondary <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-secondary-light">color-secondary-light <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-secondary-dark">color-secondary-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-success">color-success <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-success-light">color-success-light <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-success-dark">color-success-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-danger">color-danger <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-danger-light">color-danger-light <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-danger-dark">color-danger-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-warning">color-warning <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-warning-light">color-warning-light <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-warning-dark">color-warning-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-info">color-info <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-info-light">color-info-light <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-info-dark">color-info-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-body">color-body <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-body-light">color-body-light <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-body-dark">color-body-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-dark">color-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div style="background-color: rgb(34, 34, 34)">
+  <span class="color-light">color-light <i class="mdi mdi-help-circle"></i></span>
+</div>
+```
