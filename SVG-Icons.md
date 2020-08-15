@@ -105,7 +105,22 @@ To help with all of this, we added a few colors (basically took the same colors 
 
 **NOTE:** You can use these colors on Text and/or Icon **but** remember that we are using CSS `filter`, that is not the same as using CSS `color` or `background-color`, so don't expect to see the `color` in your CSS but instead look at the `filter`.
  
-![image](https://user-images.githubusercontent.com/643976/90323100-85861980-df2a-11ea-9435-65d03cf9fc9d.png)
+```scss
+// SASS colors 
+$color-primary: $primary-color;
+$color-secondary: #6c757d;
+$color-success: #28a745;
+$color-danger: #dc3545;
+$color-warning: #ffc107;
+$color-info: #17a2b8;
+$color-light: #f8f9fa;
+$color-dark: #343a40;
+$color-body: #212529;
+$color-muted: #6c757d;
+$color-white: #ffffff;
+```
+![image](https://user-images.githubusercontent.com/643976/90323119-d4cc4a00-df2a-11ea-8a30-802b4dc5e0c4.png)
+
 
 
 ##### HTML Color Test
@@ -155,5 +170,8 @@ To help with all of this, we added a few colors (basically took the same colors 
 </div>
 <div style="background-color: rgb(34, 34, 34)">
   <span class="color-light">color-light <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div style="background-color: rgb(34, 34, 34)">
+  <span class="color-white">color-white <i class="mdi mdi-help-circle"></i></span>
 </div>
 ```
