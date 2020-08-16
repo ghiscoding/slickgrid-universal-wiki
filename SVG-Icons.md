@@ -101,9 +101,9 @@ Note that even though the code looks smaller and more human readable, in reality
 `@include recolor(#ff0000, 0.8);` will in fact be converted to `filter: invert(32%) sepia(96%) saturate(7466%) hue-rotate(356deg) brightness(97%) contrast(120%);`
 
 ### SVG Colors CSS Classes
-To help with all of this, we added a few colors (basically took the same colors used by Bootstrap [here](https://getbootstrap.com/docs/4.5/utilities/colors/) but we also added a `light` and `dark` of each colors, they both use a 6% lighter/darker shade (you can override the shade with `$color-lighten-percentage` and the same for darken), all the colors have a lither/darker shade except the `color-light` & `color-dark` which are useless to duplicate. These colors can be used with the `color-X` (for example `color-primary`), also note that the primary color will follow the `$primary-color` that you might have override (it could also be different in each styling theme, shown below is the salesforce theme colors). If you find that the colors are not exactly the colors you're looking, we've also took some colors of [UiKit](https://getuikit.com/) and tagged them as `color-alt-X`.
+To help with all of this, we added a few colors (basically took the same colors used by Bootstrap [here](https://getbootstrap.com/docs/4.5/utilities/colors/) but we also added a `light` and `dark` shades for of each colors (except `color-light`, `color-dark` since there's no need), they both use a 6% lighter/darker shades (you can override the shade with `$color-lighten-percentage` and the same for darken). These colors can be used with the `color-X` (for example `color-primary`), also note that the primary color will follow the `$primary-color` that you might have override (it could also be different in each styling theme, shown below is the salesforce theme colors). If you find that the colors are not exactly the colors you're looking for, we've also took some colors taken from [UiKit](https://getuikit.com/) and tagged them as `color-alt-X`.
 
-**NOTE:** You can use these colors on Text and/or Icon **but** remember that we are using CSS `filter`, that is not the same as using CSS `color` or `background-color`, so don't expect to see the `color` in your CSS but instead look at the `filter`.
+**NOTE:** You can use these colors on Text and/or Icon **but** remember that we are using CSS `filter`, that is not the same as using CSS `color` or `background-color` and it has some side effect, use it at your own risk.
  
 ```scss
 // SASS colors 
@@ -122,6 +122,8 @@ $color-alt-default: #1e87f0;
 $color-alt-warning: #faa05a;
 $color-alt-danger: #f0506e;
 $color-alt-success: #32d296;
+
+// lighter/darker shades
 $color-lighten-percentage: 6%;
 $color-darken-percentage: 6%;
 ```
