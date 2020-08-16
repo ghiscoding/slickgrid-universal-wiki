@@ -101,7 +101,7 @@ Note that even though the code looks smaller and more human readable, in reality
 `@include recolor(#ff0000, 0.8);` will in fact be converted to `filter: invert(32%) sepia(96%) saturate(7466%) hue-rotate(356deg) brightness(97%) contrast(120%);`
 
 #### SVG Colors CSS Classes
-To help with all of this, we added a few colors (basically took the same colors used by Bootstrap [here](https://getbootstrap.com/docs/4.5/utilities/colors/) but we also added a `light` and `dark` of each colors, they both use a 6% lighter/darker shade (you can override the shade with `$color-lighten-percentage` and the same for darken), all the colors have a lither/darker shade except the `color-light` & `color-dark` which are useless to duplicate. These colors can be used with the `color-X` (for example `color-primary`), also note that the primary color will follow the `$primary-color` that you might have override (it could also be different in each styling theme, shown below is the salesforce theme colors).
+To help with all of this, we added a few colors (basically took the same colors used by Bootstrap [here](https://getbootstrap.com/docs/4.5/utilities/colors/) but we also added a `light` and `dark` of each colors, they both use a 6% lighter/darker shade (you can override the shade with `$color-lighten-percentage` and the same for darken), all the colors have a lither/darker shade except the `color-light` & `color-dark` which are useless to duplicate. These colors can be used with the `color-X` (for example `color-primary`), also note that the primary color will follow the `$primary-color` that you might have override (it could also be different in each styling theme, shown below is the salesforce theme colors). If you find that the colors are not exactly the colors you're looking, we've also took some colors of [UiKit](https://getuikit.com/) and tagged them as `color-alt-X`.
 
 **NOTE:** You can use these colors on Text and/or Icon **but** remember that we are using CSS `filter`, that is not the same as using CSS `color` or `background-color`, so don't expect to see the `color` in your CSS but instead look at the `filter`.
  
@@ -118,10 +118,14 @@ $color-dark: #343a40;
 $color-body: #212529;
 $color-muted: #6c757d;
 $color-white: #ffffff;
+$color-alt-default: #1e87f0;
+$color-alt-warning: #faa05a;
+$color-alt-danger: #f0506e;
+$color-alt-success: #32d296;
+$color-lighten-percentage: 6%;
+$color-darken-percentage: 6%;
 ```
-![image](https://user-images.githubusercontent.com/643976/90323119-d4cc4a00-df2a-11ea-8a30-802b4dc5e0c4.png)
-
-
+![image](https://user-images.githubusercontent.com/643976/90325971-5b475280-df50-11ea-9791-f02ea33af2d8.png)
 
 ##### HTML Color Test
 ```html
@@ -173,5 +177,25 @@ $color-white: #ffffff;
 </div>
 <div style="background-color: rgb(34, 34, 34)">
   <span class="color-white">color-white <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-alt-default">color-alt-default <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-alt-default-light">color-alt-default-light <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-alt-default-dark">color-alt-default-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-alt-warning">color-alt-warning <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-alt-warning-light">color-alt-warning-light <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-alt-warning-dark">color-alt-warning-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-alt-success">color-alt-success <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-alt-success-light">color-alt-success-light <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-alt-success-dark">color-alt-success-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-alt-danger">color-alt-danger <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-alt-danger-light">color-alt-danger-light <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-alt-danger-dark">color-alt-danger-dark <i class="mdi mdi-help-circle"></i></span>
 </div>
 ```
