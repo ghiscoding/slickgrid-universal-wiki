@@ -105,7 +105,7 @@ To help with all of this, we added a few colors (basically took the same colors 
 
 **NOTE:** You can use these colors on Text and/or Icon **but** remember that we are using CSS `filter`, that is not the same as using CSS `color` or `background-color` and it has some side effect, use it at your own risk.
  
-**NOTE2:** The `colors.scss` is **only** included in the Material and Salesforce Themes since those are the only 2 themes currently using SVGs. If you wish to use these colors then simply add the necessary css/scss file.
+**NOTE 2:** The `colors.scss` is **only** included in the Material and Salesforce Themes since those are the only 2 themes currently using SVGs. If you wish to use these colors then simply add the necessary css/scss file.
 
 ```scss
 // SASS colors 
