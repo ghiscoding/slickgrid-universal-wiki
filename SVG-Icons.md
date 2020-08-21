@@ -124,6 +124,10 @@ $color-alt-default: #1e87f0;
 $color-alt-warning: #faa05a;
 $color-alt-danger: #f0506e;
 $color-alt-success: #32d296;
+$color-se-primary: #3dcd58;
+$color-se-info: #42b4e6;
+$color-se-info-dark: #337ab7;
+$color-se-warning: #e47f00;
 
 // lighter/darker shades
 $color-lighten-percentage: 6%;
@@ -201,5 +205,17 @@ $color-darken-percentage: 6%;
   <span class="color-alt-danger">color-alt-danger <i class="mdi mdi-help-circle"></i></span> -
   <span class="color-alt-danger-light">color-alt-danger-light <i class="mdi mdi-help-circle"></i></span> -
   <span class="color-alt-danger-dark">color-alt-danger-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
+<div>
+  <span class="color-se-primary">color-se-primary <i class="mdi mdi-help-circle"></i></span> -
+</div>
+<div>
+  <span class="color-se-info">color-se-info <i class="mdi mdi-help-circle"></i></span> -
+</div>
+<div>
+  <span class="color-se-info-dark">color-se-info-dark <i class="mdi mdi-help-circle"></i></span> -
+</div>
+<div>
+  <span class="color-se-warning">color-se-warning <i class="mdi mdi-help-circle"></i></span> -
 </div>
 ```
