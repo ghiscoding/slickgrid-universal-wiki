@@ -207,8 +207,8 @@ $color-darken-percentage: 6%;
   <span class="color-alt-danger-dark">color-alt-danger-dark <i class="mdi mdi-help-circle"></i></span>
 </div>
 <div><span class="color-se-primary">color-se-primary <i class="mdi mdi-help-circle"></i></span></div>
-<div><span class="color-se-info">color-se-info <i class="mdi mdi-help-circle"></i></span></div>
-<div><span class="color-se-info-dark">color-se-info-dark <i class="mdi mdi-help-circle"></i></span></div>
+<div><span class="color-se-link">color-se-link <i class="mdi mdi-help-circle"></i></span></div>
+<div><span class="color-se-link-dark">color-se-link-dark <i class="mdi mdi-help-circle"></i></span></div>
 <div><span class="color-se-secondary">color-se-secondary <i class="mdi mdi-help-circle"></i></span></div>
 <div><span class="color-se-danger">color-se-danger <i class="mdi mdi-help-circle"></i></span></div>
 <div><span class="color-se-warning">color-se-warning <i class="mdi mdi-help-circle"></i></span></div>
