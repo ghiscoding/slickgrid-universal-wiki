@@ -107,6 +107,8 @@ To help with all of this, we added a few icon colors (basically took the same co
  
 **NOTE 2:** The `colors.scss` is **only** included in the Material and Salesforce Themes since those are the only 2 themes currently using SVGs. If you wish to use these colors then simply add the necessary css/scss file.
 
+![image](https://user-images.githubusercontent.com/643976/90913834-cce92b80-e3aa-11ea-8720-3be5b171288b.png)
+
 ```scss
 // SASS colors 
 $color-primary: $primary-color;
@@ -207,10 +209,14 @@ $color-darken-percentage: 6%;
   <span class="color-alt-danger-dark">color-alt-danger-dark <i class="mdi mdi-help-circle"></i></span>
 </div>
 <div><span class="color-se-primary">color-se-primary <i class="mdi mdi-help-circle"></i></span></div>
-<div><span class="color-se-link">color-se-link <i class="mdi mdi-help-circle"></i></span></div>
-<div><span class="color-se-link-dark">color-se-link-dark <i class="mdi mdi-help-circle"></i></span></div>
+<div>
+  <span class="color-se-link">color-se-link <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-se-link-dark">color-se-link-dark <i class="mdi mdi-help-circle"></i></span>
+</div>
 <div><span class="color-se-secondary">color-se-secondary <i class="mdi mdi-help-circle"></i></span></div>
 <div><span class="color-se-danger">color-se-danger <i class="mdi mdi-help-circle"></i></span></div>
-<div><span class="color-se-warning">color-se-warning <i class="mdi mdi-help-circle"></i></span></div>
-<div><span class="color-se-warning-light">color-se-warning-light <i class="mdi mdi-help-circle"></i></span></div>
+<div>
+  <span class="color-se-warning">color-se-warning <i class="mdi mdi-help-circle"></i></span> -
+  <span class="color-se-warning-light">color-se-warning-light <i class="mdi mdi-help-circle"></i></span>
+</div>
 ```
