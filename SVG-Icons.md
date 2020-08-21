@@ -103,7 +103,7 @@ Note that even though the code looks smaller and more human readable, in reality
 ### SVG Colors CSS Classes
 To help with all of this, we added a few colors (basically took the same colors used by Bootstrap [here](https://getbootstrap.com/docs/4.5/utilities/colors/) but we also added a `light` and `dark` shades for of each colors (except `color-light`, `color-dark` since there's no need), they both use a 6% lighter/darker shades (you can override the shade with `$color-lighten-percentage` and the same for darken). These colors can be used with the `color-X` (for example `color-primary`), also note that the primary color will follow the `$primary-color` that you might have override (it could also be different in each styling theme, shown below is the salesforce theme colors). If you find that the colors are not exactly the colors you're looking for, we've also took some colors taken from [UiKit](https://getuikit.com/) and tagged them as `color-alt-X`.
 
-**NOTE:** You can use these colors on Text and/or Icon **but** remember that we are using CSS `filter`, that is not the same as using CSS `color` or `background-color` and it has some side effect, use it at your own risk.
+**NOTE:** You can use these colors on Icon and/or Text **but** remember that we're using CSS `filter` here which is very different compare to using regular CSS `color` or `background-color`.
  
 **NOTE 2:** The `colors.scss` is **only** included in the Material and Salesforce Themes since those are the only 2 themes currently using SVGs. If you wish to use these colors then simply add the necessary css/scss file.
 
