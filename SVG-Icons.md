@@ -127,9 +127,12 @@ $color-alt-warning: #faa05a;
 $color-alt-danger: #f0506e;
 $color-alt-success: #32d296;
 $color-se-primary: #3dcd58;
-$color-se-info: #42b4e6;
-$color-se-info-dark: #337ab7;
+$color-se-link: #42b4e6;
+$color-se-link-dark: #337ab7;
+$color-se-danger: #b10043;
+$color-se-secondary: #9fa0a4;
 $color-se-warning: #e47f00;
+$color-se-warning-light: #ffd100;
 
 // lighter/darker shades
 $color-lighten-percentage: 6%;
