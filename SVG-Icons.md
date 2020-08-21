@@ -135,7 +135,6 @@ $color-se-warning: #e47f00;
 $color-lighten-percentage: 6%;
 $color-darken-percentage: 6%;
 ```
-![image](https://user-images.githubusercontent.com/643976/90913146-d45c0500-e3a9-11ea-8c2b-a7f877b44201.png)
 
 ##### HTML Color Test
 ```html
