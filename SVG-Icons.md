@@ -133,13 +133,6 @@ $color-darken-percentage: 6%;
 
 ##### HTML Color Test
 ```html
-<!-- quick sample -->
-<span class="color-primary">color-primary <i class="mdi mdi-help-circle"></i></span>
-```
-
-<details>
-<summary>Click to see Full HTML Color Test Code</summary>
-```html
 <div>
   <span class="color-primary">color-primary <i class="mdi mdi-help-circle"></i></span> -
   <span class="color-primary-light">color-primary-light <i class="mdi mdi-help-circle"></i></span> -
@@ -210,4 +203,3 @@ $color-darken-percentage: 6%;
   <span class="color-alt-danger-dark">color-alt-danger-dark <i class="mdi mdi-help-circle"></i></span>
 </div>
 ```
-</details>
