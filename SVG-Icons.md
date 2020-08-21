@@ -132,7 +132,7 @@ $color-darken-percentage: 6%;
 ![image](https://user-images.githubusercontent.com/643976/90325971-5b475280-df50-11ea-9791-f02ea33af2d8.png)
 
 ##### HTML Color Test
-```html
+```code
 <!-- quick sample -->
 <span class="color-primary">color-primary <i class="mdi mdi-help-circle"></i></span>
 ```
