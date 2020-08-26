@@ -15,6 +15,7 @@ Some of the Deprecated Code and Feature Changes
   - however note that the options are still under the same property name `exportOptions`
 - Header Menu Commands (typo)
   - rename `hideFilterCommands` to singular `hideFilterCommand` since there can only be 1 filter per column
+- renamed `EditorValidatorOutput` interface to `EditorValidationResult`
 
 ### Backend Service APIs
 Note that the `BackendServiceApi` is no longer exposed in the `{Angular|Aurelia}GridInstance`, so if you wish to reference it (for example when you want to use it with an external export button), then create a reference while instantiating it.
