@@ -3,7 +3,7 @@
 - [Using SVG with SASS](/ghiscoding/slickgrid-universal/wiki/SVG-Icons#using-custom-svgs-with-sass)
 - [How to change SVG color?](/ghiscoding/slickgrid-universal/wiki/SVG-Icons#how-to-change-svg-color)
 - [List of included Material SVG Icons](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/styles/material-svg-icons.scss)
-  - We only included the most popular icons, about 100 out of the 4000 available icons
+  - We only included the most popular icons, about 100 out of the 4000 available [Material Design icons](https://materialdesignicons.com/)
 - [SVG Colors CSS Classes](/ghiscoding/slickgrid-universal/wiki/SVG-Icons#svg-colors---css-classes)
 
 ### Description
