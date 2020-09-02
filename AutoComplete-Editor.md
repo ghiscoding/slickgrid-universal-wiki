@@ -6,7 +6,7 @@
   - [Basic Usage with Object Result (**preferred way**)](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#remote-api-basic-with-object-result)
   - [with `renderItem` + custom Layout (`twoRows` or `fourCorners`)](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#remote-api-with-renderitem--custom-layout-tworows-or-fourcorners)
   - [with jQueryUI `_renderItem` callback + custom Layout (`twoRows` or `fourCorners`)](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#remote-api-with-jquery-ui-_renderitem-callback--custom-layout-tworows-or-fourcorners)
-  - [Custom Styling - SASS variables](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/styles/_variables.scss#L159)
+  - [Custom Styling - SASS variables](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/styles/_variables.scss#L141)
 - [Force User Input](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#autocomplete---force-user-input)
 - [Animated Gif Demo](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#animated-gif-demo)
 
