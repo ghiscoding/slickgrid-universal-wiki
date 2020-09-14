@@ -1,13 +1,14 @@
 #### index
-- [Demo](/ghiscoding/Angular-Slickgrid/wiki/Grouping-&-Aggregators#demo)
-- [Description](/ghiscoding/Angular-Slickgrid/wiki/Grouping-&-Aggregators#description)
-- [Setup](/ghiscoding/Angular-Slickgrid/wiki/Grouping-&-Aggregators#setup)
-- [Aggregators](/ghiscoding/Angular-Slickgrid/wiki/Grouping-&-Aggregators#aggregators)
-- [GroupTotalsFormatter](/ghiscoding/Angular-Slickgrid/wiki/Grouping-&-Aggregators#group-totals-formatter)
-- [Custom GroupTotalsFormatter](/ghiscoding/Angular-Slickgrid/wiki/Grouping-&-Aggregators#custom-grouptotalsformatter)
-- [Set a Grouping](/ghiscoding/Angular-Slickgrid/wiki/Grouping-&-Aggregators#set-a-grouping)
-- [Clear Grouping / Collapse All / Expand All](https://github.com/ghiscoding/Angular-Slickgrid/wiki/Grouping-&-Aggregators#clear-grouping--collapse-all--expand-all)
-- [Styling - Change Icons](/ghiscoding/Angular-Slickgrid/wiki/Grouping-&-Aggregators#styling-change-icons)
+- [Demo](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#demo)
+- [Description](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#description)
+- [Setup](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#setup)
+- [Aggregators](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#aggregators)
+- [SortComparers](/ghiscoding/slickgrid-universal/tree/master/packages/common/src/sortComparers)
+- [GroupTotalsFormatter](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#group-totals-formatter)
+- [Custom GroupTotalsFormatter](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#custom-grouptotalsformatter)
+- [Set a Grouping](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#set-a-grouping)
+- [Clear Grouping / Collapse All / Expand All](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#clear-grouping--collapse-all--expand-all)
+- [Styling - Change Icons](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#styling-change-icons)
 
 ## Demo
 ##### Regular Grouping
