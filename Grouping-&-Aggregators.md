@@ -3,7 +3,7 @@
 - [Description](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#description)
 - [Setup](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#setup)
 - [Aggregators](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#aggregators)
-- [SortComparers](/ghiscoding/slickgrid-universal/tree/master/packages/common/src/sortComparers)
+- [SortComparers](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/sortComparers/sortComparers.index.ts)
 - [GroupTotalsFormatter](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#group-totals-formatter)
 - [Custom GroupTotalsFormatter](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#custom-grouptotalsformatter)
 - [Set a Grouping](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators#set-a-grouping)
