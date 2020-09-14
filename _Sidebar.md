@@ -15,6 +15,7 @@
       * [AutoComplete](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor)
     * [Formatters](/ghiscoding/slickgrid-universal/wiki/Formatters)
 * Grid Functionalities
+    * [Grouping & Aggregators](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators)
     * [On Events](/ghiscoding/slickgrid-universal/wiki/Grid-&-DataView-Events)
 ---
 * [TODOs](/ghiscoding/slickgrid-universal/wiki/TODOs)
