@@ -38,7 +38,7 @@ For this filter to work you will need to add [Multiple-Select.js](http://wenzhix
 - `autoDropWidth` option was added to automatically resize the dropdown with the same width as the select filter element.
 
 ##### UI Sample
-Scroll down below to see the [UI Print Screens](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#ui-sample-1)
+Scroll down below to see the [UI Print Screens](/ghiscoding/slickgrid-universal/wiki/Select-Filter#ui-sample-1)
 
 ### Types
 There are 3 types of select filter
@@ -50,7 +50,7 @@ There are 3 types of select filter
   - this one is less recommended, it is a simple and plain select dropdown. There are no styling applied and will be different in every browser. If you want a more consistent visual UI, it's suggested to use the other 2 filters (`multipleSelect` or `singleSelect`)
 
 ### SASS Styling
-You can change the `multipleSelect` and `singleSelect` styling with SASS [variables](/ghiscoding/aurelia-slickgrid/blob/master/aurelia-slickgrid/src/aurelia-slickgrid/styles/_variables.scss#L123) for styling. For more info on how to use SASS in your project, read the [Wiki - Styling](/ghiscoding/aurelia-slickgrid/wiki/Styling)
+You can change the `multipleSelect` and `singleSelect` styling with SASS [variables](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/styles/_variables.scss#L736) for styling. For more info on how to use SASS in your project, read the [Wiki - Styling](/ghiscoding/slickgrid-universal/wiki/Styling)
 
 ### How to use Select Filter
 Simply set the flag `filterable` to True and and enable the filters in the Grid Options. Here is an example with a full column definition:
@@ -88,10 +88,10 @@ If you want to load the grid with certain default filter(s), you can use the fol
 - `searchTerms` (array of values)
 
 #### Note
-Even though the option of `searchTerms` it is much better to use the more powerful `presets` grid options, please refer to the [Grid State & Presets](/ghiscoding/aurelia-slickgrid/wiki/Grid-State-&-Preset#grid-presets) for more info.
+Even though the option of `searchTerms` it is much better to use the more powerful `presets` grid options, please refer to the [Grid State & Presets](/ghiscoding/slickgrid-universal/wiki/Grid-State-&-Preset#grid-presets) for more info.
 
 **NOTE**
-If you also have `presets` in the grid options, then your `searchTerms` will be ignored completely (even if it's a different column) since `presets` have higher priority over `searchTerms`. See [Grid State & Grid Presets](/ghiscoding/aurelia-slickgrid/wiki/Grid-State-&-Preset) from more info.
+If you also have `presets` in the grid options, then your `searchTerms` will be ignored completely (even if it's a different column) since `presets` have higher priority over `searchTerms`. See [Grid State & Grid Presets](/ghiscoding/slickgrid-universal/wiki/Grid-State-&-Preset) from more info.
 
 #### Sample
 ```ts
@@ -284,15 +284,8 @@ this.columnDefinitions = [
 ];
 ```
 
-#### CLI
-- modify your `aurelia.json` file and import the necessary files, please review the [HOWTO - CLI](/ghiscoding/aurelia-slickgrid/wiki/HOWTO--Step-by-Step#2-for-aurelia-cli-modify-the-aureliajson-file) for more info
-- modify your `index.html` file and include the proper styling for the custom version of `multiple-select`
-```html
-<link rel="stylesheet" type="text/css" href="../node_modules/aurelia-slickgrid/dist/lib/multiple-select/multiple-select.css">
-```
-
 #### LabelPrefix / LabelSuffix
-`labelPrefix` and `labelSuffix` were recently added, they are also supported by the `customStructure` and can also be overridden. See [Collection Label Prefix/Suffix](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#collection-label-prefixsuffix)
+`labelPrefix` and `labelSuffix` were recently added, they are also supported by the `customStructure` and can also be overridden. See [Collection Label Prefix/Suffix](/ghiscoding/slickgrid-universal/wiki/Select-Filter#collection-label-prefixsuffix)
 
 ### Custom Structure with Translation
 What if you want to use `customStructure` and translate the labels? Simply pass the flag `enableTranslateLabel: true`
@@ -412,15 +405,8 @@ this.columnDefinitions = [
 ```
 
 #### Change Default DOMPurify Options (sanitize html)
-If you find that the HTML that you passed is being sanitized and you wish to change it, then you can change the default `sanitizeHtmlOptions` property defined in the Global Grid Options, for more info on how to change these global options, see the [Wiki - Global Grid Options](/ghiscoding/aurelia-slickgrid/wiki/Global-Options) and also take a look at the [GitHub - DOMPurify](https://github.com/cure53/DOMPurify#can-i-configure-it) configurations.
+If you find that the HTML that you passed is being sanitized and you wish to change it, then you can change the default `sanitizeHtmlOptions` property defined in the Global Grid Options, for more info on how to change these global options, see the [Wiki - Global Grid Options](/ghiscoding/slickgrid-universal/wiki/Global-Options) and also take a look at the [GitHub - DOMPurify](https://github.com/cure53/DOMPurify#can-i-configure-it) configurations.
 
-### Installation
-#### WebPack
-- modify your `main.ts` file to include the custom version of `multiple-select`
-```javascript
-import 'aurelia-slickgrid/dist/lib/multiple-select/multiple-select.css';
-import 'aurelia-slickgrid/dist/lib/multiple-select/multiple-select.js';
-```
 
 ### Collection Add Blank Entry
 In some cases a blank entry at the beginning of the collection could be useful, the most common example for this is to use the first option as a blank entry to tell our Filter to show everything. So for that we can use the `addBlankEntry` flag in `collectionOptions
@@ -532,7 +518,7 @@ For example
 ```
 
 ### Filter Options (`MultipleSelectOption` interface)
-All the available options that can be provided as `filterOptions` to your column definitions can be found under this [multipleSelectOption interface](/ghiscoding/aurelia-slickgrid/blob/master/src/aurelia-slickgrid/models/multipleSelectOption.interface.ts) and you should cast your `filterOptions` to that interface to make sure that you use only valid options of the `multiple-select.js` library. 
+All the available options that can be provided as `filterOptions` to your column definitions can be found under this [multipleSelectOption interface](/ghiscoding/slickgrid-universal/tree/master/packages/common/src/interfaces/multipleSelectOption.interface.ts) and you should cast your `filterOptions` to that interface to make sure that you use only valid options of the `multiple-select.js` library. 
 
 ```ts
 filter: {
@@ -546,7 +532,7 @@ filter: {
 ### Multiple-select.js Options
 You can use any options from [Multiple-Select.js](http://wenzhixin.net.cn/p/multiple-select) and add them to your `filterOptions` property. However please note that this is a customized version of the original (all original [lib options](http://wenzhixin.net.cn/p/multiple-select/docs/) are available so you can still consult the original site for all options).
 
-Couple of small options were added to suit Aurelia-SlickGrid needs, which is why it points to `aurelia-slickgrid/lib` folder (which is our customized version of the original). This lib is required if you plan to use `multipleSelect` or `singleSelect` Filters. What was customized to (compare to the original) is the following:
+Couple of small options were added to suit SlickGrid-Universal needs, which is why we are using a fork [ghiscoding/multiple-select-modified](https://github.com/ghiscoding/multiple-select-modified) folder (which is our customized version of the original). This lib is required if you plan to use `multipleSelect` or `singleSelect` Filters. What was customized to (compare to the original) is the following:
 - `okButton` option was added to add an OK button for simpler closing of the dropdown after selecting multiple options.
   - `okButtonText` was also added for locale (i18n)
 - `offsetLeft` option was added to make it possible to offset the dropdown. By default it is set to 0 and is aligned to the left of the select element. This option is particularly helpful when used as the last right column, not to fall off the screen.
