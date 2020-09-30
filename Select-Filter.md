@@ -1,28 +1,28 @@
 ##### updated doc to `2.x` version
 
 ### index
-- [demo](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#demo)
-- [SASS styling](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#sass-styling)
-- [How to use Select Filter](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#how-to-use-select-filter)
-- [Default Search Terms](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#default-search-terms)
-- [How to add Translation](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#how-to-add-translation)
+- [demo](/ghiscoding/slickgrid-universal/wiki/Select-Filter#demo)
+- [SASS styling](/ghiscoding/slickgrid-universal/wiki/Select-Filter#sass-styling)
+- [How to use Select Filter](/ghiscoding/slickgrid-universal/wiki/Select-Filter#how-to-use-select-filter)
+- [Default Search Terms](/ghiscoding/slickgrid-universal/wiki/Select-Filter#default-search-terms)
+- [How to add Translation](/ghiscoding/slickgrid-universal/wiki/Select-Filter#how-to-add-translation)
 - Collection Options
-   - [Add Blank Entry](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#collection-add-blank-entry)
-   - [Add Custom Entry at Beginning/End of Collection](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#collection-add-custom-entry-at-the-beginningend-of-the-collection)
-   - [Custom Structure](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#custom-structure-keylabel-pair)
-   - [Custom Structure with Translation](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#custom-structure-with-translation)
-   - [Collection filterBy/sortBy](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#collection-filterbysortby)
-   - [Collection Label Prefix/Suffix](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#collection-label-prefixsuffix)
-   - [Collection Label Render HTML](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#collection-label-render-html)
-   - [Collection Async Load](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#collection-async-load)
+   - [Add Blank Entry](/ghiscoding/slickgrid-universal/wiki/Select-Filter#collection-add-blank-entry)
+   - [Add Custom Entry at Beginning/End of Collection](/ghiscoding/slickgrid-universal/wiki/Select-Filter#collection-add-custom-entry-at-the-beginningend-of-the-collection)
+   - [Custom Structure](/ghiscoding/slickgrid-universal/wiki/Select-Filter#custom-structure-keylabel-pair)
+   - [Custom Structure with Translation](/ghiscoding/slickgrid-universal/wiki/Select-Filter#custom-structure-with-translation)
+   - [Collection filterBy/sortBy](/ghiscoding/slickgrid-universal/wiki/Select-Filter#collection-filterbysortby)
+   - [Collection Label Prefix/Suffix](/ghiscoding/slickgrid-universal/wiki/Select-Filter#collection-label-prefixsuffix)
+   - [Collection Label Render HTML](/ghiscoding/slickgrid-universal/wiki/Select-Filter#collection-label-render-html)
+   - [Collection Async Load](/ghiscoding/slickgrid-universal/wiki/Select-Filter#collection-async-load)
 - Installation
-  - [CLI](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#cli)
-  - [WebPack](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#webpack)
-- [`multiple-select.js` Options](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#multiple-selectjs-options)
-  - [Filter Options (`MultipleSelectOption` interface)](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#filter-options-multipleselectoption-interface)
-  - [Display shorter selected label text](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#display-shorter-selected-label-text)
-- [Query against a different field](/ghiscoding/aurelia-slickgrid/wiki/Select-Filter#query-against-another-field-property)
-- [Update Filters Dynamically](/ghiscoding/aurelia-slickgrid/wiki/Input-Filter#update-filters-dynamically)
+  - [CLI](/ghiscoding/slickgrid-universal/wiki/Select-Filter#cli)
+  - [WebPack](/ghiscoding/slickgrid-universal/wiki/Select-Filter#webpack)
+- [`multiple-select.js` Options](/ghiscoding/slickgrid-universal/wiki/Select-Filter#multiple-selectjs-options)
+  - [Filter Options (`MultipleSelectOption` interface)](/ghiscoding/slickgrid-universal/wiki/Select-Filter#filter-options-multipleselectoption-interface)
+  - [Display shorter selected label text](/ghiscoding/slickgrid-universal/wiki/Select-Filter#display-shorter-selected-label-text)
+- [Query against a different field](/ghiscoding/slickgrid-universal/wiki/Select-Filter#query-against-another-field-property)
+- [Update Filters Dynamically](/ghiscoding/slickgrid-universal/wiki/Input-Filter#update-filters-dynamically)
 
 ### Demo
 [Demo Page](https://ghiscoding.github.io/slickgrid-universal/#/example10) / [Demo Component](https://github.com/ghiscoding/slickgrid-universal/blob/master/examples/webpack-demo-vanilla-bundle/src/examples/example10.ts)
@@ -31,7 +31,7 @@
 Multiple Select (dropdown) filter is useful when we want to filter the grid 1 or more search term value.
 
 #### Note
-For this filter to work you will need to add [Multiple-Select.js](http://wenzhixin.net.cn/p/multiple-select) to your project. This is a customized version of the original (thought all the original [lib options](http://wenzhixin.net.cn/p/multiple-select/docs/) are available so you can still consult the original site for all options). Couple of small options were added to suit Aurelia-SlickGrid needs, which is why it points to `aurelia-slickgrid/dist/lib` folder. This lib is required if you plan to use `multipleSelect` or `singleSelect` Filters. What was customized to (compare to the original)
+For this filter to work you will need to add [Multiple-Select.js](http://wenzhixin.net.cn/p/multiple-select) to your project. This is a customized version of the original (thought all the original [lib options](http://wenzhixin.net.cn/p/multiple-select/docs/) are available so you can still consult the original site for all options). Couple of small options were added to suit SlickGrid-Universal needs, which is why it points to `slickgrid-universal/dist/lib` folder. This lib is required if you plan to use `multipleSelect` or `singleSelect` Filters. What was customized to (compare to the original)
 - `okButton` option was added to add an OK button for simpler closing of the dropdown after selecting multiple options.
   - `okButtonText` was also added for locale (i18n)
 - `offsetLeft` option was added to make it possible to offset the dropdown. By default it is set to 0 and is aligned to the left of the select element. This option is particularly helpful when used as the last right column, not to fall off the screen.
