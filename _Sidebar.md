@@ -13,6 +13,8 @@
 * Column Functionalities
     * [Editors](/ghiscoding/slickgrid-universal/wiki/Editors)
       * [AutoComplete](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor)
+    * Filters
+        * [Select Filter (dropdown)](/ghiscoding/slickgrid-universal/wiki/Select-Filter)
     * [Formatters](/ghiscoding/slickgrid-universal/wiki/Formatters)
 * Grid Functionalities
     * [Grouping & Aggregators](/ghiscoding/slickgrid-universal/wiki/Grouping-&-Aggregators)
