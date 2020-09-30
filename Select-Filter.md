@@ -271,7 +271,7 @@ What if you wanted to merge the results instead? Then in this case, you can chan
 this.columnDefinitions = [
   { id: 'duration', name: 'Duration', field: 'duration',
     filter: {
-      collection: yourCollection,
+      collection: [yourCollection],
       collectionFilterBy: [
         // ...
       ],
