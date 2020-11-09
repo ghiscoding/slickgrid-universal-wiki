@@ -17,31 +17,55 @@ For a [UI sample](/ghiscoding/slickgrid-universal/wiki/Formatters#ui-sample), sc
 `Slickgrid-Universal` ships with a few `Formatters` by default which helps with common fields, you can see the [entire list here](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/formatters/index.ts#L37).
 
 #### List of provided `Formatters`
+- `arrayObjectToCsv`: Takes an array of complex objects converts it to a comma delimited string.
 - `arrayToCsv` : takes an array of text and returns it as CSV string
+- `bold`: show value in bold font weight
+- `center`: Center a text value horizontally
 - `checkbox` : a simple HTML checkbox (it's preferable to use `checkmark` for a better UI)
 - `checkmark` : uses Font-Awesome [(fa-check)](http://fontawesome.io/icon/check/)
+- `checkmarkMaterial` use Material Design to display a checkmark icon
+- `collection`: Looks up values from the columnDefinition.params.collection property and displays the label in CSV or string format
 - `complexObject`: takes a complex object (with a `field` that has a `.` notation) and pull correct value
   - e.g.: `field: 'user.firstName', formatter: Formatters.complexObject`, will display the user's first name
-- `dateIso` : represents a Date in ISO format (YYYY-MM-DD)
-- `dateTimeIso` : represents a Date in ISO format & time in 24hrs (YYYY-MM-DD h:mm:ss)
-- `dateTimeIsoAmPm` : represents a Date in ISO format & time am/pm (YYYY-MM-DD h:mm:ss a)
-- `dateUs` : represents a Date in US format (MM/DD/YYYY)
-- `dateTimeUs` : represents a Date in ISO format & time in 24hrs (MM/DD/YYYY h:mm:ss)
-- `dateTimeUsAmPm` : represents a Date in ISO format & time am/pm (MM/DD/YYYY h:mm:ss a)
+- `dateEuro`: Takes a Date object and displays it as an Euro Date format (DD/MM/YYYY)
+- `dateTimeEuro`: Takes a Date object and displays it as an Euro Date+Time format (DD/MM/YYYY HH:mm:ss)
+- `dateTimeShortEuro`: Takes a Date object and displays it as an Euro Date+Time (without seconds) format (DD/MM/YYYY HH:mm)
+- `dateTimeEuroAmPm`: Takes a Date object and displays it as an Euro Date+Time+(am/pm) format (DD/MM/YYYY hh:mm:ss a) 
+- `dateIso` : Takes a Date object and displays it as an ISO Date format (YYYY-MM-DD)
+- `dateTimeIso` : Takes a Date object and displays it as an ISO Date+Time format (YYYY-MM-DD HH:mm:ss)
+- `dateTimeIsoAmPm` : Takes a Date object and displays it as an ISO Date+Time+(am/pm) format (YYYY-MM-DD h:mm:ss a)
+- `dateTimeShortIso`: Takes a Date object and displays it as an ISO Date+Time (without seconds) format (YYYY-MM-DD HH:mm)
+- `dateUs` : Takes a Date object and displays it as an US Date format (MM/DD/YYYY)
+- `dateTimeUs` : Takes a Date object and displays it as an US Date+Time format (MM/DD/YYYY HH:mm:ss)
+- `dateTimeShortUs`: Takes a Date object and displays it as an US Date+Time (without seconds) format (MM/DD/YYYY HH:mm:ss)
+- `dateTimeUsAmPm` : Takes a Date object and displays it as an US Date+Time+(am/pm) format (MM/DD/YYYY hh:mm:ss a)
+- `decimal`: Display the value as x decimals formatted, defaults to 2 decimals. You can pass "minDecimal" and/or "maxDecimal" to the "params" property.
 - `deleteIcon`: add an delete icon using Font Awesome (`fa-trash`), you can change the color via the CSS class `delete-icon`.
+- `dollar`: Display the value as 2 decimals formatted with dollar sign '$' at the end of of the value.
+- `dollarColored`: Display the value as 2 decimals formatted with dollar sign '$' at the end of of the value, change color of text to red/green on negative/positive value
+- `dollarColoredBoldFormatter`: Display the value as 2 decimals formatted with dollar sign '$' at the end of of the value, change color of text to red/green on negative/positive value, show it in bold font weight as well
 - `editIcon`: add an edit icon using Font Awesome (`fa-pencil`), you can change the color via the CSS class `edit-icon`.
+- `fakeHyperlink`: takes any text value and display it as a fake a hyperlink
 - `hyperlink`: takes a URL cell value and wraps it into a clickable hyperlink `<a href="value">value</a>`
+   - the cell value **must contain** (`ftp://abc`, `http://abc` or `https://abc`), if it doesn't then use `fakeHyperlink`
 - `hyperlinkUriPrefix`: format a URI prefix into an hyperlink
 - `lowercase`: to lowercase the cell value text
 - `mask`: to change the string output using a mask, use `params` to pass a `mask` property
    - example: `{ field: 'phone', formatter: Formatters.mask, params: { mask: '(000) 000-0000' }}`
 - `multiple`: pipe multiple formatters (executed in sequence), use `params` to pass the list of formatters.
    - example: `{ field: 'title', formatter: Formatters.multiple, params: { formatters: [ Formatters.lowercase, Formatters.uppercase ] }`
+- `percent`: Takes a cell value number (between 0.0-1.0) and displays a red (<50) or green (>=50) bar
 - `percentComplete` : takes a percentage value (0-100%), displays a bar following this logic:
    - `red`: < 30%, `grey`: < 70%, `green`: >= 70%
 - `percentCompleteBar` : same as `percentComplete` but uses [Bootstrap - Progress Bar with label](https://getbootstrap.com/docs/3.3/components/#progress-label).
-- `uppercase`: to uppercase the cell value text
-- `yesNo` : from a `boolean` value, it will display `Yes` or `No` as text
+- `percentCompleteBarWithText`: Takes a cell value number (between 0-100) and displays SlickGrid custom "percent-complete-bar" with Text a red (<30), silver (>30 & <70) or green (>=70) bar
+- `percentSymbol`: Takes a cell value number (between 0-100) and add the "%" after the number
+- `progressBar`: Takes a cell value number (between 0-100) and displays Bootstrap "progress-bar" a red (<30), silver (>30 & <70) or green (>=70) bar
+- `translate`: Takes a cell value and translates it (i18n). Requires an instance of the Translate Service:: `i18n: this.translate
+- `translateBoolean`: Takes a boolean value, cast it to upperCase string and finally translates it (i18n).
+- `tree`: Formatter that must be use with a Tree Data column
+- `uppercase`: Takes a value and displays it all uppercase
+- `yesNo` : Takes a boolean value and display a string 'Yes' or 'No'
 
 **Note:** The list might not always be up to date, you can refer to the [Formatters export](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/formatters/index.ts#L37) to know exactly which ones are available.
 
