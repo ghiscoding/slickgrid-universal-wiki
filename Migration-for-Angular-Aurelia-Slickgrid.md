@@ -2,6 +2,8 @@ Some of the Deprecated Code and Feature Changes
 
 ### Deprecated Code (removed)
 - removed `registerPlugins` Grid Option since all useful plugins/controls already exist in the lib.
+- removed `hideColumn(column)` please use `hideColumnById` or `hideColumnByIds` instead
+- removed `hideColumnByIndex(idx)` please use `hideColumnById` or `hideColumnByIds` instead
 
 ## Changes
 - Grid Height/Width should now be passed through the Grid Options 
