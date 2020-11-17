@@ -17,6 +17,8 @@ For a [UI sample](/ghiscoding/slickgrid-universal/wiki/Formatters#ui-sample), sc
 `Slickgrid-Universal` ships with a few `Formatters` by default which helps with common fields, you can see the [entire list here](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/formatters/index.ts#L37).
 
 #### List of provided `Formatters`
+- `alignCenter`: Align cell value to the center (alias to `Formatters.center`)
+- `alignRight`: Align cell value to the right
 - `arrayObjectToCsv`: Takes an array of complex objects converts it to a comma delimited string.
 - `arrayToCsv` : takes an array of text and returns it as CSV string
 - `bold`: show value in bold font weight
