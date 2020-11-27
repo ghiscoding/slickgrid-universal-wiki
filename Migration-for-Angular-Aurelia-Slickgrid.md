@@ -1,8 +1,8 @@
 Some of the Deprecated Code and Feature Changes
 
 ## Biggest Changes
-1. Backend Service API are now decoupled, see section below [Backend Service API](https://github.com/ghiscoding/slickgrid-universal/wiki/Migration-for-Angular-Aurelia-Slickgrid#backend-service-apis)
-2. Export to File & Export to Excel are now decoupled, see section below [Export Services](https://github.com/ghiscoding/slickgrid-universal/wiki/Migration-for-Angular-Aurelia-Slickgrid#export-services)
+1. Export to File & Export to Excel are now decoupled, see section below [Export Services](https://github.com/ghiscoding/slickgrid-universal/wiki/Migration-for-Angular-Aurelia-Slickgrid#export-services)
+2. Backend Service API are now decoupled, see section below [Backend Service API](https://github.com/ghiscoding/slickgrid-universal/wiki/Migration-for-Angular-Aurelia-Slickgrid#backend-service-apis)
 
 ### Deprecated Code (removed)
 - removed `registerPlugins` Grid Option since all useful plugins/controls already exist in the lib.
