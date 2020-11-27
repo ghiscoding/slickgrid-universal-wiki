@@ -6,7 +6,7 @@ Some of the Deprecated Code and Feature Changes
 - removed `hideColumnByIndex(idx)` please use `hideColumnById` or `hideColumnByIds` instead
 
 ## Changes
-- Grid Height/Width should now be passed through the Grid Options 
+- Grid Height/Width should now be passed through the Grid Options instead of the View
    - `this.gridOptions = { gridHeight: 500, gridWidth: 600 }`
 - Grid Service `updateItem()` will no longer highlight be default (if you want to get this behavior then change the options `highlightRow: true`)
 - `CheckboxSelector` interface renamed to `CheckboxSelectorOption`
