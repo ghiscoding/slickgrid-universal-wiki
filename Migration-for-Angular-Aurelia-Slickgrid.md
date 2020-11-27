@@ -8,7 +8,7 @@ Some of the Deprecated Code and Feature Changes
 ## Changes
 - Grid Height/Width should now be passed through the Grid Options instead of the View
    - `this.gridOptions = { gridHeight: 500, gridWidth: 600 }`
-- Grid Service `updateItem()` will no longer highlight be default (if you want to get this behavior then change the options `highlightRow: true`)
+- Grid Service `updateItem()` will no longer highlight the row by default (if you want to get this behavior then change the options `highlightRow: true`)
 - `CheckboxSelector` interface renamed to `CheckboxSelectorOption`
 - `ExcelExportService` is now an opt-in package [@slickgrid-universal/excel-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/excel-export)
 - `ExportService` was renamed to `FileExportService` and is now an opt-in package [@slickgrid-universal/file-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/file-export)
