@@ -1,5 +1,9 @@
 Some of the Deprecated Code and Feature Changes
 
+## Biggest Changes
+1. Backend Service API are now decoupled, see []()
+2. Export to File & Export to Excel are now decoupled, see []()
+
 ### Deprecated Code (removed)
 - removed `registerPlugins` Grid Option since all useful plugins/controls already exist in the lib.
 - removed `hideColumn(column)` please use `hideColumnById` or `hideColumnByIds` instead
@@ -11,16 +15,19 @@ Some of the Deprecated Code and Feature Changes
 - Grid Service `updateItem()` will no longer highlight the row by default (if you want to get this behavior then change the options `highlightRow: true`)
 - `CheckboxSelector` interface renamed to `CheckboxSelectorOption`
 - `ExcelExportService` is now an opt-in package [@slickgrid-universal/excel-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/excel-export)
-- `ExportService` was renamed to `FileExportService` and is now an opt-in package [@slickgrid-universal/file-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/file-export)
-- `columnDefinitions` is no longer a valid property of `BackendServiceOption` which means that you cannot use it anymore with OData/GraphQL. This is no longer necessary since the Services can get the columns definition right from the grid object.
-- `ExportService` renamed to `FileExportService` (export extensions are `.txt`, `.csv`)
-  - however note that the options are still under the same property name `exportOptions`
+- `ExportService` was renamed to `FileExportService` (export extensions are `.txt`, `.csv`) and is now an opt-in package [@slickgrid-universal/file-export](https://github.com/ghiscoding/slickgrid-universal/tree/master/packages/file-export)
+  - however note that the options are still under the same grid option property name of `exportOptions`
 - Header Menu Commands (typo)
   - rename `hideFilterCommands` to singular `hideFilterCommand` since there can only be 1 filter per column
 - renamed `EditorValidatorOutput` interface to `EditorValidationResult`
+- `Sorter` interface got renamed to `SortComparer`
+- `Sorters` got renamed to `SortComparers` (often used when using the Grouping feature)
 
 ### Backend Service APIs
 Note that the `BackendServiceApi` is no longer exposed in the `{Angular|Aurelia}GridInstance`, so if you wish to reference it (for example when you want to use it with an external export button), then create a reference while instantiating it.
+
+#### Changes
+- `columnDefinitions` is no longer a valid property of `BackendServiceOption` which means that you cannot use it anymore with OData/GraphQL. This is no longer necessary since the Services can get the columns definition right from the grid object.
 
 ##### OData Service
 ```ts
