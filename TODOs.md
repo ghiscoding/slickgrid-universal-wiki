@@ -65,5 +65,7 @@
 - [x] Mutiple-Select is not showing caret icon to represent a dropdown in SF
 - [x] Check if Date Picker works correctly with new latest version of `Flatpickr`
 - [x] See if we can get all the vanilla-grid-bundle `instances` and Services as `readonly` class members
+- [ ] Convert dynamic loading of SlickGrid plugins/controls from `require(plugin)` to `await import(plugin)`
+    - see this [article](https://mariusschulz.com/blog/dynamic-import-expressions-in-typescript)
 - [ ] See if we can get `DOM Purify` to work in SF, else keep the custom sanitizer
 
