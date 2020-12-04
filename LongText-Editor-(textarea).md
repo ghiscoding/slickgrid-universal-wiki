@@ -1,7 +1,7 @@
 ### Demo
 [Demo Page](https://ghiscoding.github.io/slickgrid-universal/#/example12) | [Demo Component](/ghiscoding/slickgrid-universal/blob/master/examples/webpack-demo-vanilla-bundle/src/examples/example12.ts)
 
-#### Editor Options
+### Editor Options
 You can change button texts, textarea size (cols, rows) and also change position of the textarea (auto is the default which will try to automatically find best place to position the textarea).
 ```ts
 initializeGrid() {
@@ -31,7 +31,7 @@ initializeGrid() {
 }
 ```
 
-#### Custom Validator
+### Custom Validator
 You can add a Custom Validator, from an external function or inline.
 ```ts
 // you can create custom validator to pass to an inline editor
