@@ -1,9 +1,9 @@
 ##### index
 - [Editor Options](/ghiscoding/slickgrid-universal/wiki/LongText-Editor-(textarea)#editor-options) 
-- [Custom Validator](/ghiscoding/slickgrid-universal/wiki/LongText-Editor-(textarea)#custom-validator)
+- [Custom Validator](/ghiscoding/slickgrid-universal/wiki/LongText-Editor-(textarea)#custom-validator) 
 
 ### Demo
-[Demo Page](https://ghiscoding.github.io/slickgrid-universal/#/example12) | [Demo Component](/ghiscoding/slickgrid-universal/blob/master/examples/webpack-demo-vanilla-bundle/src/examples/example12.ts)
+[Demo Page](https://ghiscoding.github.io/slickgrid-universal/#/example12) | [Demo Component](/ghiscoding/slickgrid-universal/blob/master/examples/webpack-demo-vanilla-bundle/src/examples/example12.ts) - ("Title" column to be more specific)
 
 ### Editor Options
 You can change button texts, textarea size (cols, rows) and also change position of the textarea (auto is the default which will try to automatically find best place to position the textarea).
