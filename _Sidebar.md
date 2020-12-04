@@ -11,6 +11,7 @@
 * Column Functionalities
     * [Editors](/ghiscoding/slickgrid-universal/wiki/Editors)
       * [AutoComplete](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor)
+      * [LongText (textarea)](/ghiscoding/slickgrid-universal/wiki/LongText-(textarea))
     * Filters
         * [Select Filter (dropdown)](/ghiscoding/slickgrid-universal/wiki/Select-Filter)
     * [Formatters](/ghiscoding/slickgrid-universal/wiki/Formatters)
