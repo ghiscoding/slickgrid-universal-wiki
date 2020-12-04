@@ -1,3 +1,7 @@
+##### index
+- [Editor Options]() 
+- [Custom Validator]()
+
 ### Demo
 [Demo Page](https://ghiscoding.github.io/slickgrid-universal/#/example12) | [Demo Component](/ghiscoding/slickgrid-universal/blob/master/examples/webpack-demo-vanilla-bundle/src/examples/example12.ts)
 
