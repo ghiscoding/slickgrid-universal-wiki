@@ -7,6 +7,9 @@
 
 ### Editor Options
 You can change button texts, textarea size (cols, rows) and also change position of the textarea (auto is the default which will try to automatically find best place to position the textarea).
+
+#### [LongTextEditorOption](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/interfaces/longTextEditorOption.interface.ts) Interface.
+
 ```ts
 initializeGrid() {
   this.columnDefinitions = [
