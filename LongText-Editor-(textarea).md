@@ -1,5 +1,5 @@
 ##### index
-- [Editor Options]() 
+- [Editor Options](/ghiscoding/slickgrid-universal/wiki/LongText-Editor-(textarea)#editor-options) 
 - [Custom Validator]()
 
 ### Demo
