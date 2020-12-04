@@ -1,0 +1,58 @@
+### Demo
+[Demo Page](https://ghiscoding.github.io/slickgrid-universal/#/example12) | [Demo Component](/ghiscoding/slickgrid-universal/blob/master/examples/webpack-demo-vanilla-bundle/src/examples/example12.ts)
+
+#### Editor Options
+```ts
+initializeGrid() {
+  this.columnDefinitions = [
+    {
+      id: 'title', name: 'Title', field: 'title', 
+      editor: {
+        model: Editors.longText, 
+        required: true, maxLength: 12,
+        editorOptions: {
+          cols: 45,
+          rows: 6,
+          position: 'auto', // defaults to "auto" but you can change to "top", "bottom", "left" or "right"
+          buttonTexts: {
+            // you can change the button texts
+            cancel: 'Close',
+            save: 'Done'
+
+            // or if you use translation you can use the properties with `Key` suffix
+            // cancelKey: 'CANCEL',
+            // saveKey: 'SAVE',
+          }
+        } as LongTextEditorOption,
+      },
+    },
+  ];
+}
+```
+
+#### Custom Validator
+```ts
+// you can create custom validator to pass to an inline editor
+const myCustomTitleValidator = (value, args) => {
+  if ((value === null || value === undefined || !value.length) && (args.compositeEditorOptions && args.compositeEditorOptions.modalType === 'create' || args.compositeEditorOptions.modalType === 'edit')) {
+    // we will only check if the field is supplied when it's an inline editing OR a composite editor of type create/edit
+    return { valid: false, msg: 'This is a required field.' };
+  } else if (!/^(task\s\d+)*$/i.test(value)) {
+    return { valid: false, msg: 'Your title is invalid, it must start with "Task" followed by a number.' };
+  }
+  return { valid: true, msg: '' };
+};
+
+initializeGrid() {
+  this.columnDefinitions = [
+    {
+      id: 'title', name: 'Title', field: 'title', 
+      editor: {
+        model: Editors.longText, 
+        required: true, 
+        validator: myCustomTitleValidator,
+      },
+    },
+  ];
+}
+```
