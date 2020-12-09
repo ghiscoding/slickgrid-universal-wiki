@@ -9,6 +9,7 @@
   - [Custom Styling - SASS variables](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/styles/_variables.scss#L141)
 - [Force User Input](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#autocomplete---force-user-input)
 - [Animated Gif Demo](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor#animated-gif-demo)
+  - See the [Editors - Wiki](https://github.com/ghiscoding/slickgrid-universal/wiki/Editors) for more general info about Editors (validators, event handlers, ...)
 
 ### Demo
 [Demo Page](https://ghiscoding.github.io/slickgrid-universal/#/example11) | [Demo Component](/ghiscoding/slickgrid-universal/blob/master/examples/webpack-demo-vanilla-bundle/src/examples/example11.ts)
