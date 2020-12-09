@@ -70,6 +70,7 @@ this.columnDefinitions = [{
   id: 'firstName', name: 'First Name', field: 'user.firstName',
   editor: {
     model: Editors.SingleSelect,
+    complexObjectPath: 'user.middleName',
     serializeComplexValueFormat: 'flat' // (flat) will return 'Bob', (object) will return { label: 'Bob', value: 'Bob' }
   }
 }];
