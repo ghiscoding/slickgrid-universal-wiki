@@ -6,7 +6,7 @@
    * [Custom Editor](/ghiscoding/slickgrid-universal/wiki/Editors#custom-inline-editor)
 * [Perform an Action after Inline Edit](/ghiscoding/slickgrid-universal/wiki/Editors#perform-an-action-after-inline-edit)
 * [onClick Action Editor (icon click)](/ghiscoding/slickgrid-universal/wiki/Editors#onclick-action-editor-icon-click)
-* [AutoComplete Editor](/ghiscoding/slickgrid-universal/wiki/Editors#autocomplete-editor)
+* [AutoComplete Editor](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor)
 * [Select (single/multi) Editors](/ghiscoding/slickgrid-universal/wiki/Editors#select-editors)
   - [Editor Options (multipleSelectOption interface)](/ghiscoding/slickgrid-universal/wiki/Editors#editor-options-multipleselectoption-interface)
   - [Collection Async Load](/ghiscoding/slickgrid-universal/wiki/Editors#collection-async-load)
