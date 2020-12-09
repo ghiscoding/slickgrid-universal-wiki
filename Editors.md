@@ -1,13 +1,13 @@
 ##### updated doc to `2.x` version
 
 #### index
-* [Inline Editors](/ghiscoding/slickgrid-universal/wiki/Editors#how-to-use-inline-editors)
-   * [Editor `outputType` and `saveOutputType`](/ghiscoding/slickgrid-universal/wiki/Editors#editor-output-type--save-output-type)
-   * [Custom Editor](/ghiscoding/slickgrid-universal/wiki/Editors#custom-inline-editor)
-* [Perform an Action after Inline Edit](/ghiscoding/slickgrid-universal/wiki/Editors#perform-an-action-after-inline-edit)
-* [onClick Action Editor (icon click)](/ghiscoding/slickgrid-universal/wiki/Editors#onclick-action-editor-icon-click)
-* [AutoComplete Editor](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor)
-* [Select (single/multi) Editors](/ghiscoding/slickgrid-universal/wiki/Select-Dropdown-Editor-(single-multiple))
+- [Inline Editors](/ghiscoding/slickgrid-universal/wiki/Editors#how-to-use-inline-editors)
+   - [Editor `outputType` and `saveOutputType`](/ghiscoding/slickgrid-universal/wiki/Editors#editor-output-type--save-output-type)
+   - [Custom Editor](/ghiscoding/slickgrid-universal/wiki/Editors#custom-inline-editor)
+- [Perform an Action after Inline Edit](/ghiscoding/slickgrid-universal/wiki/Editors#perform-an-action-after-inline-edit)
+- [onClick Action Editor (icon click)](/ghiscoding/slickgrid-universal/wiki/Editors#onclick-action-editor-icon-click)
+- [AutoComplete Editor](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor)
+- [Select (single/multi) Editors](/ghiscoding/slickgrid-universal/wiki/Select-Dropdown-Editor-(single-multiple))
 - [Validators](/ghiscoding/slickgrid-universal/wiki/Editors#validators)
    - [Custom Validator](/ghiscoding/slickgrid-universal/wiki/Editors#custom-validator)
 - [Disabling specific cell Edit](/ghiscoding/slickgrid-universal/wiki/Editors#disabling-specific-cell-edit)
