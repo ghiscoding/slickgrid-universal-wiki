@@ -1,5 +1,6 @@
 #### index
   - [Editor Options (multipleSelectOption interface)](/ghiscoding/slickgrid-universal/wiki/Select-Dropdown-Editor-(single-multiple)#editor-options-multipleselectoption-interface)
+  - [Complex Object](/ghiscoding/slickgrid-universal/wiki/Select-Dropdown-Editor-(single-multiple)#complex-object)
   - [Collection Async Load](/ghiscoding/slickgrid-universal/wiki/Select-Dropdown-Editor-(single-multiple)#collection-async-load)
   - [Collection Label Prefix/Suffix](/ghiscoding/slickgrid-universal/wiki/Select-Dropdown-Editor-(single-multiple)#collection-label-prefixsuffix)
   - [Collection Label Render HTML](/ghiscoding/slickgrid-universal/wiki/Select-Dropdown-Editor-(single-multiple)#collection-label-render-html)
