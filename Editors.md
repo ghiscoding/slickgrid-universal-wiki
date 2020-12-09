@@ -176,10 +176,6 @@ export interface OnEventArgs {
 }
 ```
 
-## AutoComplete Editor
-(TODO: add autocomplete filter)
-The AutoComplete Editor has the same configuration (except for the `model: Editors.autoComplete`) as the AutoComplete Filter, so you can refer to the [AutoComplete Filter Wiki](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Filter) for more info on how to use it.
-
 ## Select Editors
 The library ships with two select editors: `singleSelectEditor` and the `multipleSelectEditor`. Both support the [multiple-select](https://github.com/ghiscoding/multiple-select-adapted/blob/master/src/multiple-select.js) library, but fallback to the bootstrap form-control style if you decide to exclude this library from your build. These editors will work with a list of foreign key values (custom structure not supported) and can be displayed properly with the [collectionFormatter](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/formatters/collectionFormatter.ts). 
 
