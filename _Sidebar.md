@@ -8,6 +8,8 @@
     * [Grid Options](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/interfaces/gridOption.interface.ts)
     * [Global Grid Options](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/global-grid-options.ts)
     * [Sales Global Grid Options](/ghiscoding/slickgrid-universal/blob/master/packages/vanilla-bundle/src/salesforce-global-grid-options.ts)
+    * [Slick Grid Object](/slickgrid-universal/blob/master/packages/common/src/interfaces/slickGrid.interface.ts)
+    * [SlickGrid DataView](/slickgrid-universal/blob/master/packages/common/src/interfaces/slickDataView.interface.ts)
 * Column Functionalities
     * [Editors](/ghiscoding/slickgrid-universal/wiki/Editors)
       * [AutoComplete](/ghiscoding/slickgrid-universal/wiki/AutoComplete-Editor)
