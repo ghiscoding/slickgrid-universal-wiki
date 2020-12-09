@@ -1,6 +1,7 @@
 ##### index
 - [Editor Options](/ghiscoding/slickgrid-universal/wiki/LongText-Editor-(textarea)#editor-options) 
 - [Custom Validator](/ghiscoding/slickgrid-universal/wiki/LongText-Editor-(textarea)#custom-validator) 
+- See the [Editors - Wiki](https://github.com/ghiscoding/slickgrid-universal/wiki/Editors) for more general info about Editors (validators, event handlers, ...)
 
 ### Demo
 [Demo Page](https://ghiscoding.github.io/slickgrid-universal/#/example12) | [Demo Component](/ghiscoding/slickgrid-universal/blob/master/examples/webpack-demo-vanilla-bundle/src/examples/example12.ts) - ("Title" column to be more specific)
