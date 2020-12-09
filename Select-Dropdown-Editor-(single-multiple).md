@@ -43,6 +43,37 @@ editor: {
   } as MultipleSelectOption
 }
 ```
+### Complex Object
+If your `field` string has a dot (.) it will automatically assume that it is dealing with a complex object. There are however some options you can use with a complex object, the following options from the `ColumnEditor` might be useful to you
+```ts
+interface ColumnEditor {
+  /**
+   * When providing a dot (.) notation in the "field" property of a column definition, we might want to use a different path for the editable object itself
+   * For example if we provide a coldef = { field: 'user.name' } but we use a SingleSelect Editor with object values, we could override the path to simply 'user'
+   * NOTE: Currently only used in the Single/MultipleSelect Editors, we could potentially use it for more Editors in the future if need be.
+   */
+  complexObjectPath?: string;
+
+  /**
+   * defaults to 'object', how do we want to serialize the editor value to the resulting dataContext object when using a complex object?
+   * Currently only applies to Single/Multiple Select Editor.
+   *
+   * For example, if keep default "object" format and the selected value is { value: 2, label: 'Two' } then the end value will remain as an object, so { value: 2, label: 'Two' }.
+   * On the other end, if we set "flat" format and the selected value is { value: 2, label: 'Two' } then the end value will be 2.
+   */
+  serializeComplexValueFormat?: 'flat' | 'object';
+}
+```
+
+```ts
+this.columnDefinitions = [{
+  id: 'firstName', name: 'First Name', field: 'user.firstName',
+  editor: {
+    model: Editors.SingleSelect,
+    serializeComplexValueFormat: 'flat' // (flat) will return 'Bob', (object) will return { label: 'Bob', value: 'Bob' }
+  }
+}];
+```
 
 ### Collection Label Prefix/Suffix
 You can use `labelPrefix` and/or `labelSuffix` which will concatenate the multiple properties together (`labelPrefix` + `label` + `labelSuffix`) which will used by each Select Filter option label. You can also use the property `separatorBetweenTextLabels` to define a separator between prefix, label & suffix.
