@@ -4,7 +4,7 @@
   - [Collection Label Prefix/Suffix](/ghiscoding/slickgrid-universal/wiki/Select-Dropdown-Editor-(single-multiple)#collection-label-prefixsuffix)
   - [Collection Label Render HTML](/ghiscoding/slickgrid-universal/wiki/Select-Dropdown-Editor-(single-multiple)#collection-label-render-html)
   - [`multiple-select.js` Options](/ghiscoding/slickgrid-universal/wiki/Select-Dropdown-Editor-(single-multiple)#multiple-selectjs-options)
-  - [Editors Validation]()
+  - [Editor Validators](/ghiscoding/slickgrid-universal/wiki/Editors#validators)
 
 ## Select Editors
 The library ships with two select editors: `singleSelectEditor` and the `multipleSelectEditor`. Both support the [multiple-select](https://github.com/ghiscoding/multiple-select-adapted/blob/master/src/multiple-select.js) library, but fallback to the bootstrap form-control style if you decide to exclude this library from your build. These editors will work with a list of foreign key values (custom structure not supported) and can be displayed properly with the [collectionFormatter](/ghiscoding/slickgrid-universal/blob/master/packages/common/src/formatters/collectionFormatter.ts). 
